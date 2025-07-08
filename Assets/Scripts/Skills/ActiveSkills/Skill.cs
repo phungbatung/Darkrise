@@ -11,7 +11,7 @@ public abstract class Skill : MonoBehaviour
     protected bool isCooldownCompleted { get; set; }
     public Action cooldownEvent { get; set; }
     public bool isPressed { get; set; }
-
+    [SerializeField] protected KeyCode keyCode;
     
     protected virtual void Awake()
     {
@@ -43,7 +43,7 @@ public abstract class Skill : MonoBehaviour
 
     public virtual bool CanBeUse()
     {
-        return isPressed && cooldownTimer <= 0 && player.stats.currentMana >= SkillData.levelsData[currentLevel].GetProperty<int>(SkillLevelData.Key.MANA_COST);
+        return (isPressed||Input.GetKey(keyCode)) && cooldownTimer <= 0 && player.stats.currentMana >= SkillData.levelsData[currentLevel].GetProperty<int>(SkillLevelData.Key.MANA_COST);
     }
 
     public int GetPointToUpgradeNextLevel()

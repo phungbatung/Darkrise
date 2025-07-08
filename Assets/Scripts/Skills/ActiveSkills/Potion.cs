@@ -13,6 +13,7 @@ public class Potion : MonoBehaviour
     public Action CooldownAction { get; set; }
     public Action OnConsumePotion { get; set; }
     public Action OnAssignPotion { get; set; }
+    [SerializeField] private KeyCode keyCode;
 
     private void Start()
     {
@@ -30,7 +31,9 @@ public class Potion : MonoBehaviour
         if(itemInventory!=null && ItemManager.Instance!=null && ItemManager.Instance.itemDict[itemInventory.itemId].type!=ItemType.Potion)
         {
             UnassignPotion();
-        }    
+        }
+        if (Input.GetKeyDown(keyCode))
+            Consume();
     }
     public void Consume()
     {

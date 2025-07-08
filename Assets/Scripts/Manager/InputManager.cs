@@ -33,8 +33,30 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //
+        EditorInputCheck();
+
         HorizontalInputCheck();
         VerticalInputCheck();
+    }
+
+    private void EditorInputCheck()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+            isLeftButtonPress = true;
+        if (Input.GetKeyUp(KeyCode.A))
+            isLeftButtonPress = false;
+
+        if (Input.GetKeyDown(KeyCode.D))
+            isRightButtonPress = true;
+        if (Input.GetKeyUp(KeyCode.D))
+            isRightButtonPress = false;
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            isUpButtonPress = true;
+        if (Input.GetKeyUp(KeyCode.Space))
+            isUpButtonPress = false;
     }
 
     private void HorizontalInputCheck()
