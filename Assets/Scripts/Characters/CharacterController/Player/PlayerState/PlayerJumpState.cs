@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 
 public class PlayerJumpState : PlayerAirState
 {
@@ -25,5 +26,9 @@ public class PlayerJumpState : PlayerAirState
         if (player.rb.velocity.y <= 0)
             stateMachine.ChangeState(player.fallState);
         
+    }
+    public override void StateEvent()
+    {
+        player.anim.Play("Player_Jump");
     }
 }

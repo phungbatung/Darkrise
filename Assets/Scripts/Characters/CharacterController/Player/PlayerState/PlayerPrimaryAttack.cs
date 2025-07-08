@@ -25,28 +25,25 @@ public class PlayerPrimaryAttack : CharacterState
 
     public override void Enter()
     {
-        base.Enter();
         xInput = 0;
         player.SetZeroVelocity();
         if (player.IsGrounded())
         {
-            player.anim.SetBool("grounded", true);
             if (groundComboCounter >= groundComboStack || (Time.time - groundLastTimeAttack) > timeBreakCombo)
             {
                 groundComboCounter = 0;
             }
-            player.anim.SetInteger("groundCounter", groundComboCounter);
+            player.anim.Play($"{defaultAnim}Ground{groundComboCounter+1}");
             groundComboCounter++;
         }
         else
         {
-            player.anim.SetBool("grounded", false);
             if (airComboCounter >= airComboStack || (Time.time - airLastTimeAttack) > timeBreakCombo)
             {
                 airComboCounter = 0;
                 
             }
-            player.anim.SetInteger("airCounter", airComboCounter);
+            player.anim.Play($"{defaultAnim}Air{airComboCounter+1}");
             airComboCounter++; 
         }
         player.anim.speed = player.stats.attackSpeed.GetValue() * 1.0f / player.stats.attackSpeed.BaseValue;

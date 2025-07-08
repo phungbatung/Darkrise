@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_Attack2
+  m_Name: Player_AttackAir1
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,23 +21,23 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: c3fcebeb19c16f248bd278645be8efe1, type: 3}
-    - time: 0.11111111
-      value: {fileID: 21300000, guid: cbe419e3903e1d742a81fa956b627f63, type: 3}
-    - time: 0.22222222
-      value: {fileID: 21300000, guid: 7500e25653bb56e479c1697e8662e262, type: 3}
+      value: {fileID: 21300000, guid: 2d69980469fdedf42b9568599dee1c01, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: ce4c4d1e24c17474394e9c3228172ce0, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: d4e5a3787e57ac143be7d847b52897a3, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: d8e0744cb50d72743b745b5227eae743, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 017559f4138922145abbc24d11fd3c38, type: 3}
-    - time: 0.44444445
-      value: {fileID: 21300000, guid: 20de5e25d3281f44784ad3894b5b99fb, type: 3}
-    - time: 0.5555556
-      value: {fileID: 21300000, guid: 3bbe6c84c4c227b45aa4061445561c54, type: 3}
+      value: {fileID: 21300000, guid: 815042f8aead77f43a9460ebc2f93017, type: 3}
+    - time: 0.41666666
+      value: {fileID: 21300000, guid: 3a91f63215d34c642a1a217effeb22ba, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 9
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -54,18 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: c3fcebeb19c16f248bd278645be8efe1, type: 3}
-    - {fileID: 21300000, guid: cbe419e3903e1d742a81fa956b627f63, type: 3}
-    - {fileID: 21300000, guid: 7500e25653bb56e479c1697e8662e262, type: 3}
-    - {fileID: 21300000, guid: 017559f4138922145abbc24d11fd3c38, type: 3}
-    - {fileID: 21300000, guid: 20de5e25d3281f44784ad3894b5b99fb, type: 3}
-    - {fileID: 21300000, guid: 3bbe6c84c4c227b45aa4061445561c54, type: 3}
+    - {fileID: 21300000, guid: 2d69980469fdedf42b9568599dee1c01, type: 3}
+    - {fileID: 21300000, guid: ce4c4d1e24c17474394e9c3228172ce0, type: 3}
+    - {fileID: 21300000, guid: d4e5a3787e57ac143be7d847b52897a3, type: 3}
+    - {fileID: 21300000, guid: d8e0744cb50d72743b745b5227eae743, type: 3}
+    - {fileID: 21300000, guid: 815042f8aead77f43a9460ebc2f93017, type: 3}
+    - {fileID: 21300000, guid: 3a91f63215d34c642a1a217effeb22ba, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666667
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -85,21 +85,21 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.33333334
-    functionName: PlaySFX
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.33333334
+  - time: 0.083333336
     functionName: CallStateEvent
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.5555556
+  - time: 0.083333336
+    functionName: PlaySFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.41666666
     functionName: TriggerAnimation
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -22,16 +22,16 @@ public class Player : Character
         base.Awake();
         detector = GetComponentInChildren<Detector>();
 
-        idleState = new PlayerIdleState(this, stateMachine, "idle");
-        moveState = new PlayerMoveState(this, stateMachine, "move");
-        jumpState = new PlayerJumpState(this, stateMachine, "jump");
-        fallState = new PlayerFallState(this, stateMachine, "jump");
-        attackState = new PlayerPrimaryAttack(this, stateMachine, "attack");
-        dashState = new PlayerDashState(this, stateMachine, "dash");
-        slashState = new PlayerSlashState(this, stateMachine, "slash");
-        healState = new PlayerHealingState(this, stateMachine, "healing");
-        lightCut = new PlayerLightCutState(this, stateMachine, "lightCut");
-        wolfCall = new PlayerWolfCallState(this, stateMachine, "wolfCall");
+        idleState = new PlayerIdleState(this, stateMachine, "Player_Idle");
+        moveState = new PlayerMoveState(this, stateMachine, "Player_RunStart");
+        jumpState = new PlayerJumpState(this, stateMachine, "Player_StartJump");
+        fallState = new PlayerFallState(this, stateMachine, "Player_JumpToFall");
+        attackState = new PlayerPrimaryAttack(this, stateMachine, "Player_Attack");
+        dashState = new PlayerDashState(this, stateMachine, "Player_Dash");
+        slashState = new PlayerSlashState(this, stateMachine, "Player_Slash");
+        healState = new PlayerHealingState(this, stateMachine, "Player_Healing");
+        lightCut = new PlayerLightCutState(this, stateMachine, "Player_LightCut");
+        wolfCall = new PlayerWolfCallState(this, stateMachine, "Player_WolvesCall");
         stateMachine.InitialState(idleState);
     }
 

@@ -6,28 +6,27 @@ public class CharacterState
 {
     public Character character;
     public StateMachine stateMachine;
-    public string animBoolName;
+    public string defaultAnim;
 
     public float xInput;
     public float yVelocity;
     public bool triggerCalled=false;
     public float stateTimer;
-    public CharacterState (Character _character, StateMachine _stateMachine, string _animBoolName)
+    public CharacterState (Character _character, StateMachine _stateMachine, string _defaultAnimName)
     {
         character = _character;
         stateMachine = _stateMachine;
-        animBoolName = _animBoolName;
+        defaultAnim = _defaultAnimName;
     }
     public virtual void Enter()
     {
-        character.anim.SetBool(animBoolName, true);
+        character.anim.Play(defaultAnim);
         //Debug.Log(this.GetType().Name);
     }
 
     public virtual void Exit() 
     {
         triggerCalled = false;
-        character.anim.SetBool(animBoolName, false);
     }
 
     public virtual void Update()

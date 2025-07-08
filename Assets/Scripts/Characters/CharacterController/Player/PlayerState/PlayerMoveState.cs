@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMoveState : PlayerGroundedState
 {
+    private AnimState _animState;
     public PlayerMoveState(Character _character, StateMachine _stateMachine, string _animBoolName) : base(_character, _stateMachine, _animBoolName)
     {
     }
@@ -12,6 +13,7 @@ public class PlayerMoveState : PlayerGroundedState
     {
         base.Enter();
         player.anim.speed = (100f + player.stats.moveSpeed.GetValue()) / 100f;
+        _animState = AnimState.Start;
     }
 
     public override void Exit()
@@ -22,9 +24,23 @@ public class PlayerMoveState : PlayerGroundedState
     public override void Update()
     {
         base.Update();
-        player.anim.speed = 1;
-        player.SetVelocity(xInput * player.moveSpeed * (100f + player.stats.moveSpeed.GetValue()) / 100f, player.rb.velocity.y);
         if (xInput == 0)
-            player.stateMachine.ChangeState(player.idleState);
+        {
+            stateMachine.ChangeState(player.idleState);
+        }
+        player.SetVelocity(xInput * player.moveSpeed * (100f + player.stats.moveSpeed.GetValue()) / 100f, player.rb.velocity.y);
+    }
+    public override void StateEvent()
+    {
+        if(_animState == AnimState.Start)
+        {
+            player.anim.Play("Player_Run");
+            _animState = AnimState.Loop;
+        }
+        else if(_animState == AnimState.End)
+        {
+            stateMachine.ChangeState(player.idleState);
+            _animState = AnimState.Start;
+        }
     }
 }
