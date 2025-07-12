@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 439dc3a5034c3064eace7107b82f4aaf
+guid: 6dfab8addd746fc489010141e01a8153
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -112,7 +112,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4c92d6f11c3067e4cb911b5e82cfdd45
     internalID: 0
     vertices: []
     indices: 
