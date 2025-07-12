@@ -17,7 +17,7 @@ public class UI_ItemShop : MonoBehaviour, IPointerClickHandler
     public void SetItem(ItemShop _itemShop)
     {
         itemShop = _itemShop;
-        ItemData itemData = ItemManager.Instance.itemDict[itemShop.item.itemId];
+        ItemData itemData = itemShop.item.itemData;
         itemIcon.sprite = itemData.icon;
         currencyIcon.sprite = Utils.GetCurrencyIcon().IconDict[_itemShop.price.Key];
         priceText.text = Utils.ConvertToKMB(itemShop.price.Value);

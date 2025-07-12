@@ -6,38 +6,38 @@ using UnityEngine;
 [Serializable]
 public class ItemInventory
 {
-    public int itemId;
+    public ItemData itemData;
     public int amount;
     public EquipmentProperties equipmentProperties;
 
 
     public ItemInventory()
     {
-        itemId = -1;
+        itemData = null;
         amount = 0;
     }
 
-    public ItemInventory(int _itemId, int _amount, EquipmentProperties _equipmentProperties)
+    public ItemInventory(ItemData _itemData, int _amount, EquipmentProperties _equipmentProperties)
     {
-        itemId = _itemId;
+        itemData = _itemData;
         amount = _amount;
         equipmentProperties = _equipmentProperties;
     }
 
-    public void AddItem(int _id, int _amount = 1)
+    public void AddItem(ItemData _itemData, int _amount = 1)
     {
-        if (itemId == -1)
-            itemId = _id;
+        if (this.IsEmpty())
+            itemData = _itemData;
         amount += _amount;
     }
-    public void AddItem(int _id, Dictionary<string, string> _properties = null)
+    public void AddItem(ItemData _itemData, Dictionary<string, string> _properties = null)
     {
-        if (itemId == -1)
-            itemId = _id;
+        if (IsEmpty())
+            itemData = _itemData;
 
         if (_properties != null)
         {
-            equipmentProperties = new(ItemUtilities.GetBaseProperties(_id) ,_properties);
+            equipmentProperties = new(ItemUtilities.GetBaseProperties(_itemData) ,_properties);
         }
         amount++;
     }
@@ -45,28 +45,27 @@ public class ItemInventory
     {
         amount -= _amount;
         if (amount <= 0)
-            itemId = -1;
+            itemData = null;
         if (amount <= 0)
         {
-            itemId = -1;
+            itemData = null;
             equipmentProperties = null;
         }
     }
     public void RemoveAll()
     {
         amount = 0;
-        itemId = -1;
+        itemData = null;
         equipmentProperties = null;
     }
     public bool IsEmpty()
     {
-        return itemId == -1;
+        return itemData == null;
     }
-    public bool CanBeAdded(int _itemId, int _addAmount = 1)
+    public bool CanBeAdded(ItemData _itemId, int _addAmount = 1)
     {
-        return itemId == _itemId && amount + _addAmount <= ItemManager.Instance.itemDict[itemId].maxSize;
+        return itemData == _itemId && amount + _addAmount <= itemData.maxSize;
     }
-
 
     public static void Swap(ref ItemInventory item1, ref ItemInventory item2)
     {
@@ -84,38 +83,38 @@ public class ItemInventory
         {
             Debug.Log("item2 is null");
         }
-        (item1.itemId, item2.itemId) = (item2.itemId, item1.itemId);
+        (item1.itemData, item2.itemData) = (item2.itemData, item1.itemData);
         (item1.amount, item2.amount) = (item2.amount, item1.amount);
         (item1.equipmentProperties, item2.equipmentProperties) = (item2.equipmentProperties, item1.equipmentProperties);
     }
     public void Clone(ItemInventory _itemInventory)
     {
-        itemId = _itemInventory.itemId;
+        itemData = _itemInventory.itemData;
         amount = _itemInventory.amount;
         equipmentProperties = _itemInventory.equipmentProperties;
     }
     public static int CompareByItemType(ItemInventory itemInventory1, ItemInventory itemInventory2)
     {
-        if (itemInventory1.itemId == -1 && itemInventory2.itemId != -1) return 1;
-        if (itemInventory1.itemId != -1 && itemInventory2.itemId == -1) return -1;
-        if (itemInventory1.itemId == -1 && itemInventory2.itemId == -1) return 0;
-        ItemData item1 = ItemManager.Instance.itemDict[itemInventory1.itemId];
-        ItemData item2 = ItemManager.Instance.itemDict[itemInventory2.itemId];
+        if (itemInventory1.IsEmpty() && !itemInventory2.IsEmpty()) return 1;
+        if (!itemInventory1.IsEmpty() && itemInventory2.IsEmpty()) return -1;
+        if (itemInventory1.IsEmpty() && itemInventory2.IsEmpty()) return 0;
+        ItemData item1 = itemInventory1.itemData;
+        ItemData item2 = itemInventory2.itemData;
         if (item1.type > item2.type) return 1;
         if (item1.type < item2.type) return -1;
-        if (item1.quality < item2.quality) return 1;
-        if (item1.quality > item2.quality) return -1;
+        if (item1.rarity < item2.rarity) return 1;
+        if (item1.rarity > item2.rarity) return -1;
         return 0;
     }
     public static int CompareByItemQuality(ItemInventory itemInventory1, ItemInventory itemInventory2)
     {
-        if (itemInventory1.itemId == -1 && itemInventory2.itemId != -1) return 1;
-        if (itemInventory1.itemId != -1 && itemInventory2.itemId == -1) return -1;
-        if (itemInventory1.itemId == -1 && itemInventory2.itemId == -1) return 0;
-        ItemData item1 = ItemManager.Instance.itemDict[itemInventory1.itemId];
-        ItemData item2 = ItemManager.Instance.itemDict[itemInventory2.itemId];
-        if (item1.quality < item2.quality) return 1;
-        if (item1.quality > item2.quality) return -1;
+        if (itemInventory1.IsEmpty() && !itemInventory2.IsEmpty()) return 1;
+        if (!itemInventory1.IsEmpty() && itemInventory2.IsEmpty()) return -1;
+        if (itemInventory1.IsEmpty() && itemInventory2.IsEmpty()) return 0;
+        ItemData item1 = itemInventory1.itemData;
+        ItemData item2 = itemInventory2.itemData;
+        if (item1.rarity < item2.rarity) return 1;
+        if (item1.rarity > item2.rarity) return -1;
         if (item1.type > item2.type) return 1;
         if (item1.type < item2.type) return -1;
         return 0;

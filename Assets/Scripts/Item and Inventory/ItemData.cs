@@ -13,35 +13,59 @@ public enum ItemType
     MagicDust=5,
     Material=6
 }
-public enum ItemQuality
+public enum ItemRarity
 {
-    None=0,
-    Rare=1,
-    Epic=2,
-    Legend=3
+    Common=0,
+    Uncommon=1,
+    Rare=2,
+    Epic=3,
+    Legend=4
+}
+
+public enum EquipmentType
+{
+    Sword = 0,
+    Shield = 1,
+    Gauntlet = 2,
+    Boots = 3,
+    ChestPlate = 4,
+    Pants = 5,
+    Helmet = 6,
+    Ring = 7
+}
+public enum BuffType
+{
+    Attack = 0,
+    Health = 1,
+    MoveSpeed = 2,
+    ArmorPenetration = 3,
+    Armor = 4,
+    AttackSpeed = 5
 }
 [System.Serializable]
 public class ItemData
 {
-    
+
     public int id;
     public string name;
     public Sprite icon;
     public int level;
     public ItemType type;
-    public ItemQuality quality;
+    public int subType;
+    public ItemRarity rarity;
     public string description;
     public int maxSize;
     public int sellPrice;
     public SerializableDictionary<string, string> properties = new SerializableDictionary<string, string>();
-
+    public EquipmentType EquipmentType => (EquipmentType)subType;
+    public BuffType BuffType => (BuffType)subType;
     public T GetProperty<T>(string key)
     {
         if (properties.TryGetValue(key, out string value))
         {
             try
             {
-                return (T)Convert.ChangeType(value, typeof(T)); 
+                return (T)Convert.ChangeType(value, typeof(T));
             }
             catch (Exception)
             {
@@ -69,21 +93,7 @@ public class ItemData
 
         value = default;
         return false;
-    }    
+    }
+
+    
 }
-// id = abcddd
-// a  : for ItemType
-// b  : for ItemQuality
-// c  : type of item of type a (Ex: if a is equipment then c is for equipment type)
-// ddd: identity code
-
-//Equipment type(c)
-//0 Sword
-//1 Shield
-//2 Gauntlet
-//3 Boots
-//4 ChestPlate
-//5 Pants
-//6 Helmet
-//7 Ring
-

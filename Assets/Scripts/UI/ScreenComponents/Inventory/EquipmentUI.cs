@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EquipmentUI : MonoBehaviour
 {
-    private ItemSlot[] itemSlots;
+    private EquipmentSlot[] itemSlots;
     public List<ItemInventory> equipedItem => ItemManager.Instance.equipedItems;
 
     private void Awake()
     {
-        itemSlots = GetComponentsInChildren<ItemSlot>();
+        itemSlots = GetComponentsInChildren<EquipmentSlot>();
     }
 
     public void UpdateItemSlot()

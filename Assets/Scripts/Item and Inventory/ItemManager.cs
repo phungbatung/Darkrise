@@ -48,14 +48,14 @@ public class ItemManager : MonoBehaviour, ISaveManager
         }
     }
 
-    public void AddItem(int _itemId, Dictionary<string, string> properties = null)
+    public void AddItem(ItemData _itemData, Dictionary<string, string> properties = null)
     {        
         ItemInventory firstEmptySlot = null;
         foreach (ItemInventory itemInventory in inventoryItems)
         {
-            if (itemInventory.CanBeAdded(_itemId))
+            if (itemInventory.CanBeAdded(_itemData))
             {
-                itemInventory.AddItem(_itemId, properties);
+                itemInventory.AddItem(_itemData, properties);
                 OnInventoryItemsChange?.Invoke();
                 //if (_itemId == InputManager.Instance.potionSlot.itemId)
                 //    InputManager.Instance.potionSlot.UpdateUI();
@@ -67,7 +67,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
 
         if (firstEmptySlot!= null)
         {
-            firstEmptySlot.AddItem(_itemId, properties);
+            firstEmptySlot.AddItem(_itemData, properties);
             OnInventoryItemsChange?.Invoke();
             //if (_itemId == InputManager.Instance.potionSlot.itemId)
             //    InputManager.Instance.potionSlot.UpdateUI();
@@ -76,14 +76,14 @@ public class ItemManager : MonoBehaviour, ISaveManager
 
         Debug.Log("Inventory is full.");
     }
-    public bool TryAddItem(int _itemId, Dictionary<string, string> properties = null)
+    public bool TryAddItem(ItemData _itemData, Dictionary<string, string> properties = null)
     {
         ItemInventory firstEmptySlot = null;
         foreach (ItemInventory itemInventory in inventoryItems)
         {
-            if (itemInventory.CanBeAdded(_itemId))
+            if (itemInventory.CanBeAdded(_itemData))
             {
-                itemInventory.AddItem(_itemId, properties);
+                itemInventory.AddItem(_itemData, properties);
                 OnInventoryItemsChange?.Invoke();
                 return true;
             }
@@ -93,7 +93,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
 
         if (firstEmptySlot != null)
         {
-            firstEmptySlot.AddItem(_itemId, properties);
+            firstEmptySlot.AddItem(_itemData, properties);
             OnInventoryItemsChange?.Invoke();
             return true;
         }
@@ -107,9 +107,9 @@ public class ItemManager : MonoBehaviour, ISaveManager
         ItemInventory firstEmptySlot = null;
         foreach (ItemInventory itemInventory in inventoryItems)
         {
-            if (itemInventory.CanBeAdded(_item.itemId, _item.amount))
+            if (itemInventory.CanBeAdded(_item.itemData, _item.amount))
             {
-                itemInventory.AddItem(_item.itemId, _item.amount);
+                itemInventory.AddItem(_item.itemData, _item.amount);
                 OnInventoryItemsChange?.Invoke();
                 return true;
             }
@@ -136,11 +136,11 @@ public class ItemManager : MonoBehaviour, ISaveManager
         return false;
     }    
 
-    public bool CanBeAdded(int _itemId)
+    public bool CanBeAdded(ItemData _itemData)
     {
         foreach (ItemInventory itemInventory in inventoryItems)
         {
-            if (itemInventory.CanBeAdded(_itemId) || itemInventory.IsEmpty())
+            if (itemInventory.CanBeAdded(_itemData) || itemInventory.IsEmpty())
             {
                 return true;
             }    
@@ -181,7 +181,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
         if (itemData.type == ItemType.Equipment)
         {
             Dictionary<string, string> properties = new Dictionary<string, string>();
-            for (int i = 1; i <= itemData.quality.GetHashCode(); i++)
+            for (int i = 1; i <= itemData.rarity.GetHashCode(); i++)
             {
                 int idx = UnityEngine.Random.Range(0, itemData.properties.Count);
                 var kvp = itemData.properties.ElementAt(idx);
@@ -194,11 +194,11 @@ public class ItemManager : MonoBehaviour, ISaveManager
                     properties[kvp.Key] = ((int)UnityEngine.Random.Range(float.Parse(kvp.Value) * .7f, float.Parse(kvp.Value) * 1.3f)).ToString();
                 }
             }
-            _itemInventory.AddItem(itemData.id, properties);
+            _itemInventory.AddItem(itemData, properties);
         }
         else
         {
-            _itemInventory.AddItem(itemData.id, 1);
+            _itemInventory.AddItem(itemData, 1);
         }    
         return _itemInventory;
     }    
@@ -207,11 +207,11 @@ public class ItemManager : MonoBehaviour, ISaveManager
     {
         if (_itemToEquip == null || _itemToEquip.IsEmpty())
             return;
-        if (itemDict[_itemToEquip.itemId].type != ItemType.Equipment)
+        if (_itemToEquip.itemData.type != ItemType.Equipment)
             return;
 
         ItemInventory _itemToUnequip = null;
-        _itemToUnequip = equipedItems[(int)ItemUtilities.GetEquipmentTypeById(_itemToEquip.itemId)];
+        _itemToUnequip = equipedItems[(int)_itemToEquip.itemData.EquipmentType];
         PlayerManager.Instance.player.stats.AddModifier(_itemToEquip.equipmentProperties.GetAllProperties());
         if (!_itemToUnequip.IsEmpty())
             PlayerManager.Instance.player.stats.RemoveModifier(_itemToUnequip.equipmentProperties.GetAllProperties());
@@ -220,7 +220,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
 
     public void UnequipItem(ItemInventory _itemToUnequip, ItemInventory _slotToGiveBack = null )
     {
-        if (itemDict[_itemToUnequip.itemId].type != ItemType.Equipment && !equipedItems.Contains(_itemToUnequip))
+        if (_itemToUnequip.itemData.type != ItemType.Equipment && !equipedItems.Contains(_itemToUnequip))
             return;
 
         //Find first emptys
@@ -252,7 +252,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Potion
     public void UsePotion(ItemInventory _item)
     {
-        if (itemDict[_item.itemId].type != ItemType.Potion)
+        if (_item.itemData.type != ItemType.Potion)
             return;
         SkillManager.Instance.potion.TryConsumePotion(_item);
     }
@@ -265,9 +265,9 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Buff
     public void UseBuff(ItemInventory _item)
     {
-        if (itemDict[_item.itemId].type != ItemType.Buff)
+        if (_item.itemData.type != ItemType.Buff)
             return;
-        PlayerManager.Instance.player.stats.BuffManager.StartBuff(_item.itemId);
+        PlayerManager.Instance.player.stats.BuffManager.StartBuff(_item.itemData);
         _item.RemoveItem();
     }
     #endregion
@@ -275,9 +275,9 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Skill book
     public void UseSkillBook(ItemInventory _item)
     {
-        if (itemDict[_item.itemId].type != ItemType.SkillBook)
+        if (_item.itemData.type != ItemType.SkillBook)
             return;
-        int point = int.Parse(itemDict[_item.itemId].properties[ItemUtilities.SKILL_POINT]);
+        int point = int.Parse(_item.itemData.properties[ItemUtilities.SKILL_POINT]);
         SkillManager.Instance.AddSkillPoint(point);
         _item.RemoveItem();
     }    

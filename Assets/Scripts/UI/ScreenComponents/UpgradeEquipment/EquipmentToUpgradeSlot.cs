@@ -18,7 +18,7 @@ public class EquipmentToUpgradeSlot : MonoBehaviour, IDropHandler, IPointerDownH
     public void OnDrop(PointerEventData eventData)
     {
         ItemSlot slot = eventData.pointerDrag.GetComponent<ItemSlot>();
-        ItemData itemData = ItemManager.Instance.itemDict[slot.itemInventory.itemId];
+        ItemData itemData = slot.itemInventory.itemData;
         if (itemData.type != ItemType.Equipment)
             return;
         SetItem(slot.itemInventory);
@@ -40,7 +40,7 @@ public class EquipmentToUpgradeSlot : MonoBehaviour, IDropHandler, IPointerDownH
     }
     public void SetItem(ItemInventory _itemInventory)
     {
-        ItemData itemData = ItemManager.Instance.itemDict[_itemInventory.itemId];
+        ItemData itemData = _itemInventory.itemData;
         icon.sprite = itemData.icon;
         enhanceLevel.text = _itemInventory.equipmentProperties.enhanceLevel < 1 ? "" : $"+{_itemInventory.equipmentProperties.enhanceLevel}";
         icon.color = new Color(1, 1, 1, 1);

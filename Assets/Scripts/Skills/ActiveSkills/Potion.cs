@@ -28,7 +28,7 @@ public class Potion : MonoBehaviour
             if (cooldownTimer <= 0)
                 isCooldownCompleted = true;
         }
-        if(itemInventory!=null && ItemManager.Instance!=null && ItemManager.Instance.itemDict[itemInventory.itemId].type!=ItemType.Potion)
+        if(itemInventory!=null && ItemManager.Instance!=null && itemInventory.itemData.type!=ItemType.Potion)
         {
             UnassignPotion();
         }
@@ -47,7 +47,7 @@ public class Potion : MonoBehaviour
             return false;
         if (_item == null)
             return false;
-        ItemData itemData = ItemManager.Instance.itemDict[_item.itemId];
+        ItemData itemData = _item.itemData;
         if (itemData.type != ItemType.Potion)
             return false;
 

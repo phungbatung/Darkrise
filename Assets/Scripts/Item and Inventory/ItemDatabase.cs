@@ -52,7 +52,7 @@ public class ItemDatabase : ScriptableObject
                 { 
                     id = int.Parse(data[0]),
                     type = (ItemType)(int.Parse(data[0]) / 100000),
-                    quality = (ItemQuality)((int.Parse(data[0]) / 10000) % 10),
+                    rarity = (ItemRarity)((int.Parse(data[0]) / 10000) % 10),
                     name = data[1],
                     icon = sprites.Single(s => s.name == data[2]),
                     level = int.Parse(data[3]),

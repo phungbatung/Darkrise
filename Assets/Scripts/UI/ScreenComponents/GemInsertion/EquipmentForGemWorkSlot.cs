@@ -18,7 +18,7 @@ public class EquipmentForGemWorkSlot : MonoBehaviour, IPointerDownHandler, IDrop
     public void OnDrop(PointerEventData eventData)
     {
         ItemSlot slot = eventData.pointerDrag.GetComponent<ItemSlot>();
-        ItemData itemData = ItemManager.Instance.itemDict[slot.itemInventory.itemId];
+        ItemData itemData = slot.itemInventory.itemData;
         if (itemData.type != ItemType.Equipment)
             return;
         SetItem(itemData);

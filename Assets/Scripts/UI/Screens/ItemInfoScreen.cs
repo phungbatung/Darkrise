@@ -31,17 +31,17 @@ public class ItemInfoScreen : BlitzyUI.Screen
     {
         gameObject.SetActive(true);
         itemInventory = _itemInventory;
-        ItemData item = ItemManager.Instance.itemDict[_itemInventory.itemId];
+        ItemData item = _itemInventory.itemData;
         //Base info
         itemIcon.sprite = item.icon;
         itemName.text = item.name;
         itemType.text = item.type.ToString();
-        itemQuality.text = item.quality.ToString();
+        itemQuality.text = item.rarity.ToString();
         //Properties, description
         string description = "";
         if (item.type == ItemType.Equipment)
         {
-            string baseStat = ItemUtilities.GetBaseStatOfEquipment(item.id);
+            string baseStat = ItemUtilities.GetBaseStatOfEquipment(item);
             Dictionary<string, string> _properties = itemInventory.equipmentProperties.GetBaseProperties();
             foreach (var property in _properties)
             {
@@ -63,9 +63,9 @@ public class ItemInfoScreen : BlitzyUI.Screen
             description += "\n";
             for (int i=0; i<itemInventory.equipmentProperties.unlockedGemsSlot; i++)
             {
-                if(itemInventory.equipmentProperties.gems[i] != -1)
+                if(itemInventory.equipmentProperties.gems[i].IsEmpty())
                 {
-                    ItemData gem = ItemManager.Instance.itemDict[itemInventory.equipmentProperties.gems[i]];
+                    ItemData gem = itemInventory.equipmentProperties.gems[i].itemData;
                     description += gem.name +"\n";
                     foreach (var _property in gem.properties)
                     {

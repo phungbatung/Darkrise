@@ -16,7 +16,8 @@ public class ItemDroper : MonoBehaviour
     private void DropItem()
     {
         int index = Random.Range(0, ItemManager.Instance.itemDatabase.itemList.Count);
-        Instantiate(itemObjectPrefab).SetUpItem(ItemManager.Instance.itemDatabase.itemList[index].id, transform.position);
+
+        Instantiate(itemObjectPrefab).SetUpItem(ItemManager.Instance.itemDatabase.itemList[index], transform.position);
     }
 
     private void DropCurrency()

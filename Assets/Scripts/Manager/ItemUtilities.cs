@@ -3,22 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
-public enum EquipmentType
-{
-    Sword = 0,
-    Shield = 1,
-    Gauntlet = 2,
-    Boots = 3,
-    ChestPlate = 4,
-    Pants = 5,
-    Helmet = 6,
-    Ring = 7
-}
-public enum BuffType
-{
-    Offensive = 0,
-    Deffensive = 1
-}
+
 public class ItemUtilities
 {
     public const string DAMAGE = "Attack";
@@ -44,14 +29,9 @@ public class ItemUtilities
 
     public const string SKILL_POINT = "SkillPoint";
 
-    public static EquipmentType GetEquipmentTypeById(int _itemId)
+    public static string GetBaseStatOfEquipment(ItemData _itemData)
     {
-        return (EquipmentType)(_itemId/1000%10);
-    }
-
-    public static string GetBaseStatOfEquipment(int _itemId)
-    {
-        EquipmentType equipmentType = GetEquipmentTypeById(_itemId);
+        EquipmentType equipmentType = _itemData.EquipmentType;
         if (equipmentType == EquipmentType.Sword) return DAMAGE;
         else if (equipmentType == EquipmentType.Boots) return MOVE_SPEED;
         else return ARMOR;
@@ -62,12 +42,11 @@ public class ItemUtilities
         return (BuffType)(_itemId / 1000 % 10);
     }
 
-    public static Dictionary<string, string> GetBaseProperties(int _itemId)
+    public static Dictionary<string, string> GetBaseProperties(ItemData _itemData)
     {
         Dictionary<string, string> dict = new();
-        ItemData item = ItemManager.Instance.itemDict[_itemId];
-        string baseProperties = GetBaseStatOfEquipment(_itemId);
-        dict.Add(baseProperties, item.properties[baseProperties]);
+        string baseProperties = GetBaseStatOfEquipment(_itemData);
+        dict.Add(baseProperties, _itemData.properties[baseProperties]);
         return dict;
     }
 }

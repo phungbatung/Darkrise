@@ -11,7 +11,7 @@ public class SpecifiedTypeItemSlot : ItemSlot
     public override void OnDrop(PointerEventData eventData)
     {
         ItemSlot toDropSlot = eventData.pointerDrag.GetComponent<ItemSlot>();
-        if (ItemManager.Instance.itemDict[toDropSlot.itemInventory.itemId].type != typeSpecified)
+        if (toDropSlot.itemInventory.itemData.type != typeSpecified)
             return;
         ItemManager inventory = ItemManager.Instance;
 
@@ -22,10 +22,10 @@ public class SpecifiedTypeItemSlot : ItemSlot
             if (inventory.equipedItems.Contains(toDropSlot.itemInventory))
                 return;
             //Cannot drop non-equipment to equipment slot
-            if (inventory.itemDict[toDropSlot.itemInventory.itemId].type != ItemType.Equipment)
+            if (toDropSlot.itemInventory.itemData.type != ItemType.Equipment)
                 return;
             //Cannot drop equipment of different type in this equipment slot
-            if (inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemId) != inventory.equipedItems.IndexOf(itemInventory))
+            if (inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.id) != inventory.equipedItems.IndexOf(itemInventory))
                 return;
             //Equip
             inventory.EquipItem(toDropSlot.itemInventory);
@@ -37,16 +37,16 @@ public class SpecifiedTypeItemSlot : ItemSlot
         if (ItemManager.Instance.equipedItems.Contains(toDropSlot.itemInventory))
         {
             //if slot to drop is empty then move item from equipment slot to this slot
-            if (itemInventory.itemId == -1)
+            if (itemInventory.IsEmpty())
             {
                 inventory.UnequipItem(toDropSlot.itemInventory, itemInventory);
                 return;
             }
             //Cannot swap item from equipment slot to none equipment
-            if (inventory.itemDict[itemInventory.itemId].type != ItemType.Equipment)
+            if (itemInventory.itemData.type != ItemType.Equipment)
                 return;
             //Cannot swap item from equipment slot to another equipment of different type
-            if (inventory.GetEquipmentTypeById(itemInventory.itemId) != inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemId))
+            if (inventory.GetEquipmentTypeById(itemInventory.itemData.id) != inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.id))
                 return;
             //Equip this item if it is equipment of the same type
             inventory.EquipItem(itemInventory);

@@ -54,7 +54,7 @@ public class PotionSlot : MonoBehaviour, IPointerDownHandler
             return;
         }
 
-        ItemData item = ItemManager.Instance.itemDict[potion.itemInventory.itemId];
+        ItemData item = potion.itemInventory.itemData;
         if (item.type != ItemType.Potion)
         {
             image.sprite = null;

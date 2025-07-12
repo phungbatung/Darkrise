@@ -25,12 +25,11 @@ public class BuffManager : MonoBehaviour
             buff.Countdown(Time.deltaTime);
         }
     }
-    public void StartBuff(int id, float duration = 0)
+    public void StartBuff(ItemData itemData, float duration = 0)
     {
-        EndBuffOfTheSameType(id);   
-        ItemData item = ItemManager.Instance.itemDict[id];
-        float buffDuration = duration > 0 ? duration : float.Parse(item.properties[ItemUtilities.DURATION]);
-        BuffModel buff = new BuffModel(characterStats, id, buffDuration);
+        EndBuffOfTheSameType(itemData.id);  
+        float buffDuration = duration > 0 ? duration : float.Parse(itemData.properties[ItemUtilities.DURATION]);
+        BuffModel buff = new BuffModel(characterStats, itemData.id, buffDuration);
 
         GameObject BuffViewInstance = Instantiate(buffViewPrefab);
         BuffView buffView = BuffViewInstance.GetComponent<BuffView>();
@@ -40,7 +39,7 @@ public class BuffManager : MonoBehaviour
         BuffPresenter buffPresenter = buffPresenterInstance.GetComponent<BuffPresenter>();
         buffPresenter.Setup(buff, buffView);
 
-        buffDict[ItemUtilities.GetBuffTypeById(id)] = buff;
+        buffDict[ItemUtilities.GetBuffTypeById(itemData.id)] = buff;
         buffs.Add(buff);
 
         buff.EndBuffArgEvent += EndBuffOfTheSameType;
