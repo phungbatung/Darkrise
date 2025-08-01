@@ -63,9 +63,9 @@ public class ItemInfoScreen : BlitzyUI.Screen
             description += "\n";
             for (int i=0; i<itemInventory.equipmentProperties.unlockedGemsSlot; i++)
             {
-                if(itemInventory.equipmentProperties.gems[i].IsEmpty())
+                if(itemInventory.equipmentProperties.gems[i]== ItemData.Empty)
                 {
-                    ItemData gem = itemInventory.equipmentProperties.gems[i].itemData;
+                    ItemData gem = itemInventory.equipmentProperties.gems[i];
                     description += gem.name +"\n";
                     foreach (var _property in gem.properties)
                     {
@@ -90,7 +90,7 @@ public class ItemInfoScreen : BlitzyUI.Screen
             description += $"\nCooldown: {item.properties[ItemUtilities.COOLDOWN]}s\n";
             description += $"Level required: {item.level}\n";
         }
-        else if (item.type == ItemType.Buff)
+        else if (item.type == ItemType.Food)
         {
             description += $"Effect:\n";
             foreach (var _property in item.properties)
@@ -107,7 +107,7 @@ public class ItemInfoScreen : BlitzyUI.Screen
             description += $"Effect: Active skill points +{item.properties[ItemUtilities.SKILL_POINT]}\n";
             description += $"\n{item.description}\n";
         }
-        else if (item.type == ItemType.MagicDust)
+        else if (item.type == ItemType.Gem)
         {
             description += $"Effect:\n";
             foreach (var _property in item.properties)

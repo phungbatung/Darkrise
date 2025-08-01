@@ -143,7 +143,8 @@ MonoBehaviour:
       icon: {fileID: 0}
       level: 0
       type: 0
-      quality: 0
+      subType: 0
+      rarity: 0
       description: 
       maxSize: 0
       sellPrice: 0
@@ -189,7 +190,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -30, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4919743698758946837
 CanvasRenderer:

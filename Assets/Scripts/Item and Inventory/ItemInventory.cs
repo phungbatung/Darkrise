@@ -13,7 +13,7 @@ public class ItemInventory
 
     public ItemInventory()
     {
-        itemData = null;
+        itemData = ItemData.Empty;
         amount = 0;
     }
 
@@ -60,7 +60,7 @@ public class ItemInventory
     }
     public bool IsEmpty()
     {
-        return itemData == null;
+        return itemData == ItemData.Empty;
     }
     public bool CanBeAdded(ItemData _itemId, int _addAmount = 1)
     {

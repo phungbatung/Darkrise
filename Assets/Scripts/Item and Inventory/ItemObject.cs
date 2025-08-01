@@ -10,7 +10,6 @@ public class ItemObject : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     public ItemInventory item;
-    public int itemId;
 
     private void Awake()
     {

@@ -13,4269 +13,3783 @@ MonoBehaviour:
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
   itemList:
-  - id: 110001
+  - id: 1001
     name: Wooden sword
-    icon: {fileID: 1469091165, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: 94d9aa849cd438d4cab725882354d225, type: 3}
     level: 1
     type: 1
-    quality: 1
+    subType: 0
+    rarity: 0
     description: Wooden sword
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
       dictList:
       - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: Mana
         Value: 10
-        index: 0
-        isKeyDuplicated: 0
       - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 120001
+        Value: 3
+  - id: 1002
     name: Wooden sword
-    icon: {fileID: 664935969, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: 94d9aa849cd438d4cab725882354d225, type: 3}
     level: 1
     type: 1
-    quality: 2
+    subType: 0
+    rarity: 1
     description: Wooden sword
     maxSize: 1
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
       dictList:
       - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
+      - Key: Mana
+        Value: 10
       - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 130001
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1003
     name: Wooden sword
-    icon: {fileID: 1407668916, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: 94d9aa849cd438d4cab725882354d225, type: 3}
     level: 1
     type: 1
-    quality: 3
+    subType: 0
+    rarity: 2
     description: Wooden sword
     maxSize: 1
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
       dictList:
       - Key: Attack
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
         Value: 200
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
+        Value: 10
       - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
         Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 110002
+  - id: 1004
+    name: Wooden sword
+    icon: {fileID: 21300000, guid: 94d9aa849cd438d4cab725882354d225, type: 3}
+    level: 1
+    type: 1
+    subType: 0
+    rarity: 3
+    description: Wooden sword
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1005
+    name: Wooden sword
+    icon: {fileID: 21300000, guid: 94d9aa849cd438d4cab725882354d225, type: 3}
+    level: 1
+    type: 1
+    subType: 0
+    rarity: 4
+    description: Wooden sword
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1006
     name: Iron sword
-    icon: {fileID: -469375745, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: 8a0930c520d5360478a70fbebebe0051, type: 3}
     level: 5
     type: 1
-    quality: 1
+    subType: 0
+    rarity: 0
     description: Iron sword
     maxSize: 1
-    sellPrice: 8000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 120002
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1007
     name: Iron sword
-    icon: {fileID: 2067794519, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: 8a0930c520d5360478a70fbebebe0051, type: 3}
     level: 5
     type: 1
-    quality: 2
+    subType: 0
+    rarity: 1
     description: Iron sword
     maxSize: 1
-    sellPrice: 10000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
       dictList:
       - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
         Value: 60
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 130002
+        Value: 6
+  - id: 1008
     name: Iron sword
-    icon: {fileID: -2100445558, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: 8a0930c520d5360478a70fbebebe0051, type: 3}
     level: 5
     type: 1
-    quality: 3
+    subType: 0
+    rarity: 2
     description: Iron sword
     maxSize: 1
-    sellPrice: 12000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
       dictList:
       - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 111001
+  - id: 1009
+    name: Iron sword
+    icon: {fileID: 21300000, guid: 8a0930c520d5360478a70fbebebe0051, type: 3}
+    level: 5
+    type: 1
+    subType: 0
+    rarity: 3
+    description: Iron sword
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1010
+    name: Iron sword
+    icon: {fileID: 21300000, guid: 8a0930c520d5360478a70fbebebe0051, type: 3}
+    level: 5
+    type: 1
+    subType: 0
+    rarity: 4
+    description: Iron sword
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1011
     name: Wooden shield
-    icon: {fileID: 129716259, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: edf06c1b40fd22d40bb49452fed777b2, type: 3}
     level: 1
     type: 1
-    quality: 1
+    subType: 1
+    rarity: 0
     description: Wooden shield
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
       dictList:
       - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: Mana
         Value: 10
-        index: 0
-        isKeyDuplicated: 0
       - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 121001
+        Value: 3
+  - id: 1012
     name: Wooden shield
-    icon: {fileID: 1144936285, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: edf06c1b40fd22d40bb49452fed777b2, type: 3}
     level: 1
     type: 1
-    quality: 2
+    subType: 1
+    rarity: 1
     description: Wooden shield
     maxSize: 1
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
       dictList:
       - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
+      - Key: Mana
+        Value: 10
       - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 131001
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1013
     name: Wooden shield
-    icon: {fileID: -976650181, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: edf06c1b40fd22d40bb49452fed777b2, type: 3}
     level: 1
     type: 1
-    quality: 3
+    subType: 1
+    rarity: 2
     description: Wooden shield
     maxSize: 1
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
       dictList:
       - Key: Attack
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
         Value: 200
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
+        Value: 10
       - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
         Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 111002
+  - id: 1014
+    name: Wooden shield
+    icon: {fileID: 21300000, guid: edf06c1b40fd22d40bb49452fed777b2, type: 3}
+    level: 1
+    type: 1
+    subType: 1
+    rarity: 3
+    description: Wooden shield
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1015
+    name: Wooden shield
+    icon: {fileID: 21300000, guid: edf06c1b40fd22d40bb49452fed777b2, type: 3}
+    level: 1
+    type: 1
+    subType: 1
+    rarity: 4
+    description: Wooden shield
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1016
     name: Iron shield
-    icon: {fileID: 62196301, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: 8f669c64fbdd46f46b62342ff9e55090, type: 3}
     level: 5
     type: 1
-    quality: 1
+    subType: 1
+    rarity: 0
     description: Iron shield
     maxSize: 1
-    sellPrice: 8000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 121002
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1017
     name: Iron shield
-    icon: {fileID: 596800514, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: 8f669c64fbdd46f46b62342ff9e55090, type: 3}
     level: 5
     type: 1
-    quality: 2
+    subType: 1
+    rarity: 1
     description: Iron shield
     maxSize: 1
-    sellPrice: 10000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
       dictList:
       - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
         Value: 60
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 131002
+        Value: 6
+  - id: 1018
     name: Iron shield
-    icon: {fileID: -1240032733, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: 8f669c64fbdd46f46b62342ff9e55090, type: 3}
     level: 5
     type: 1
-    quality: 3
+    subType: 1
+    rarity: 2
     description: Iron shield
     maxSize: 1
-    sellPrice: 12000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
       dictList:
       - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 112001
+  - id: 1019
+    name: Iron shield
+    icon: {fileID: 21300000, guid: 8f669c64fbdd46f46b62342ff9e55090, type: 3}
+    level: 5
+    type: 1
+    subType: 1
+    rarity: 3
+    description: Iron shield
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1020
+    name: Iron shield
+    icon: {fileID: 21300000, guid: 8f669c64fbdd46f46b62342ff9e55090, type: 3}
+    level: 5
+    type: 1
+    subType: 1
+    rarity: 4
+    description: Iron shield
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1021
     name: Leather gauntlet
-    icon: {fileID: -1003383938, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: d1cfc022f9c5be2408c0241b11fc158e, type: 3}
     level: 1
     type: 1
-    quality: 1
+    subType: 2
+    rarity: 0
     description: Leather gauntlet
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
       dictList:
       - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: Mana
         Value: 10
-        index: 0
-        isKeyDuplicated: 0
       - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 122001
+        Value: 3
+  - id: 1022
     name: Leather gauntlet
-    icon: {fileID: -861412668, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: d1cfc022f9c5be2408c0241b11fc158e, type: 3}
     level: 1
     type: 1
-    quality: 2
+    subType: 2
+    rarity: 1
     description: Leather gauntlet
     maxSize: 1
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
       dictList:
       - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
+      - Key: Mana
+        Value: 10
       - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 132001
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1023
     name: Leather gauntlet
-    icon: {fileID: 2132896822, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: d1cfc022f9c5be2408c0241b11fc158e, type: 3}
     level: 1
     type: 1
-    quality: 3
+    subType: 2
+    rarity: 2
     description: Leather gauntlet
     maxSize: 1
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
       dictList:
       - Key: Attack
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
         Value: 200
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
+        Value: 10
       - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
         Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 112002
-    name: Iron gauntlet
-    icon: {fileID: 665594913, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
-    level: 5
+  - id: 1024
+    name: Leather gauntlet
+    icon: {fileID: 21300000, guid: d1cfc022f9c5be2408c0241b11fc158e, type: 3}
+    level: 1
     type: 1
-    quality: 1
+    subType: 2
+    rarity: 3
+    description: Leather gauntlet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1025
+    name: Leather gauntlet
+    icon: {fileID: 21300000, guid: d1cfc022f9c5be2408c0241b11fc158e, type: 3}
+    level: 1
+    type: 1
+    subType: 2
+    rarity: 4
+    description: Leather gauntlet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1026
+    name: Iron gauntlet
+    icon: {fileID: 21300000, guid: df8a839a45a4fba4aa1ef1a533ff1dbf, type: 3}
+    level: 1
+    type: 1
+    subType: 2
+    rarity: 0
     description: Iron gauntlet
     maxSize: 1
-    sellPrice: 8000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 122002
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1027
     name: Iron gauntlet
-    icon: {fileID: -853115715, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: df8a839a45a4fba4aa1ef1a533ff1dbf, type: 3}
+    level: 1
     type: 1
-    quality: 2
+    subType: 2
+    rarity: 1
     description: Iron gauntlet
     maxSize: 1
-    sellPrice: 10000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
       dictList:
       - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
         Value: 60
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 132002
+        Value: 6
+  - id: 1028
     name: Iron gauntlet
-    icon: {fileID: -291419356, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: df8a839a45a4fba4aa1ef1a533ff1dbf, type: 3}
+    level: 1
     type: 1
-    quality: 3
+    subType: 2
+    rarity: 2
     description: Iron gauntlet
     maxSize: 1
-    sellPrice: 12000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
       dictList:
       - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 113001
-    name: Leather boots
-    icon: {fileID: -1908731272, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1029
+    name: Iron gauntlet
+    icon: {fileID: 21300000, guid: df8a839a45a4fba4aa1ef1a533ff1dbf, type: 3}
     level: 1
     type: 1
-    quality: 1
+    subType: 2
+    rarity: 3
+    description: Iron gauntlet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1030
+    name: Iron gauntlet
+    icon: {fileID: 21300000, guid: df8a839a45a4fba4aa1ef1a533ff1dbf, type: 3}
+    level: 1
+    type: 1
+    subType: 2
+    rarity: 4
+    description: Iron gauntlet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1031
+    name: Leather boots
+    icon: {fileID: 21300000, guid: 18c2db568f7b1a54c9a6b1eece28237c, type: 3}
+    level: 5
+    type: 1
+    subType: 3
+    rarity: 0
     description: Leather boots
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
       dictList:
       - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: Mana
         Value: 10
-        index: 0
-        isKeyDuplicated: 0
       - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 123001
+        Value: 3
+  - id: 1032
     name: Leather boots
-    icon: {fileID: 823650173, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 1
+    icon: {fileID: 21300000, guid: 18c2db568f7b1a54c9a6b1eece28237c, type: 3}
+    level: 5
     type: 1
-    quality: 2
+    subType: 3
+    rarity: 1
     description: Leather boots
     maxSize: 1
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
       dictList:
       - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
+      - Key: Mana
+        Value: 10
       - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 133001
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1033
     name: Leather boots
-    icon: {fileID: 1934327133, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 1
+    icon: {fileID: 21300000, guid: 18c2db568f7b1a54c9a6b1eece28237c, type: 3}
+    level: 5
     type: 1
-    quality: 3
+    subType: 3
+    rarity: 2
     description: Leather boots
     maxSize: 1
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
       dictList:
       - Key: Attack
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
         Value: 200
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
+        Value: 10
       - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
         Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 113002
-    name: Iron boots
-    icon: {fileID: -885064185, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1034
+    name: Leather boots
+    icon: {fileID: 21300000, guid: 18c2db568f7b1a54c9a6b1eece28237c, type: 3}
     level: 5
     type: 1
-    quality: 1
+    subType: 3
+    rarity: 3
+    description: Leather boots
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1035
+    name: Leather boots
+    icon: {fileID: 21300000, guid: 18c2db568f7b1a54c9a6b1eece28237c, type: 3}
+    level: 5
+    type: 1
+    subType: 3
+    rarity: 4
+    description: Leather boots
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1036
+    name: Iron boots
+    icon: {fileID: 21300000, guid: 09a07c005ad44e24dbdbca3d29c48086, type: 3}
+    level: 1
+    type: 1
+    subType: 3
+    rarity: 0
     description: Iron boots
     maxSize: 1
-    sellPrice: 8000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 123002
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1037
     name: Iron boots
-    icon: {fileID: -93218536, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: 09a07c005ad44e24dbdbca3d29c48086, type: 3}
+    level: 1
     type: 1
-    quality: 2
+    subType: 3
+    rarity: 1
     description: Iron boots
     maxSize: 1
-    sellPrice: 10000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
       dictList:
       - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
         Value: 60
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 133002
+        Value: 6
+  - id: 1038
     name: Iron boots
-    icon: {fileID: 1960359432, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: 09a07c005ad44e24dbdbca3d29c48086, type: 3}
+    level: 1
     type: 1
-    quality: 3
+    subType: 3
+    rarity: 2
     description: Iron boots
     maxSize: 1
-    sellPrice: 12000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
       dictList:
       - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 114001
-    name: Leather chestplate
-    icon: {fileID: -1183799550, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1039
+    name: Iron boots
+    icon: {fileID: 21300000, guid: 09a07c005ad44e24dbdbca3d29c48086, type: 3}
     level: 1
     type: 1
-    quality: 1
+    subType: 3
+    rarity: 3
+    description: Iron boots
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1040
+    name: Iron boots
+    icon: {fileID: 21300000, guid: 09a07c005ad44e24dbdbca3d29c48086, type: 3}
+    level: 1
+    type: 1
+    subType: 3
+    rarity: 4
+    description: Iron boots
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1041
+    name: Leather chestplate
+    icon: {fileID: 21300000, guid: 41b67abaff4a1be42b0c5571af889299, type: 3}
+    level: 5
+    type: 1
+    subType: 4
+    rarity: 0
     description: Leather chestplate
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
       dictList:
       - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: Mana
         Value: 10
-        index: 0
-        isKeyDuplicated: 0
       - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 124001
+        Value: 3
+  - id: 1042
     name: Leather chestplate
-    icon: {fileID: 1724928255, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 1
+    icon: {fileID: 21300000, guid: 41b67abaff4a1be42b0c5571af889299, type: 3}
+    level: 5
     type: 1
-    quality: 2
+    subType: 4
+    rarity: 1
     description: Leather chestplate
     maxSize: 1
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
       dictList:
       - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
       - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 15
       - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
+      - Key: Mana
+        Value: 10
       - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 134001
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1043
     name: Leather chestplate
-    icon: {fileID: -647379937, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 1
+    icon: {fileID: 21300000, guid: 41b67abaff4a1be42b0c5571af889299, type: 3}
+    level: 5
     type: 1
-    quality: 3
+    subType: 4
+    rarity: 2
     description: Leather chestplate
     maxSize: 1
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
       dictList:
       - Key: Attack
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: ArmorPenetration
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
+        Value: 3
       - Key: CriticalDamage
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
         Value: 200
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
         Value: 20
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
+        Value: 10
       - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 2
       - Key: MoveSpeed
         Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 114002
-    name: Iron chestplate
-    icon: {fileID: -533646718, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1044
+    name: Leather chestplate
+    icon: {fileID: 21300000, guid: 41b67abaff4a1be42b0c5571af889299, type: 3}
     level: 5
     type: 1
-    quality: 1
+    subType: 4
+    rarity: 3
+    description: Leather chestplate
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1045
+    name: Leather chestplate
+    icon: {fileID: 21300000, guid: 41b67abaff4a1be42b0c5571af889299, type: 3}
+    level: 5
+    type: 1
+    subType: 4
+    rarity: 4
+    description: Leather chestplate
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1046
+    name: Iron chestplate
+    icon: {fileID: 21300000, guid: 61361e27ae6050b448b0de0812fbca0d, type: 3}
+    level: 1
+    type: 1
+    subType: 4
+    rarity: 0
     description: Iron chestplate
     maxSize: 1
-    sellPrice: 8000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 124002
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1047
     name: Iron chestplate
-    icon: {fileID: 1548243101, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: 61361e27ae6050b448b0de0812fbca0d, type: 3}
+    level: 1
     type: 1
-    quality: 2
+    subType: 4
+    rarity: 1
     description: Iron chestplate
     maxSize: 1
-    sellPrice: 10000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
       dictList:
       - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
         Value: 60
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
+        Value: 400
       - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 134002
+        Value: 6
+  - id: 1048
     name: Iron chestplate
-    icon: {fileID: 1758748048, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: 61361e27ae6050b448b0de0812fbca0d, type: 3}
+    level: 1
     type: 1
-    quality: 3
+    subType: 4
+    rarity: 2
     description: Iron chestplate
     maxSize: 1
-    sellPrice: 12000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
       dictList:
       - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
         Value: 60
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 115001
-    name: Leather pants
-    icon: {fileID: 257684570, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
-    level: 1
-    type: 1
-    quality: 1
-    description: Leather pants
-    maxSize: 1
-    sellPrice: 2000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
-      dictList:
-      - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 125001
-    name: Leather pants
-    icon: {fileID: -1470041946, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 1
-    type: 1
-    quality: 2
-    description: Leather pants
-    maxSize: 1
-    sellPrice: 4000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
-      dictList:
-      - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 135001
-    name: Leather pants
-    icon: {fileID: 1388162471, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 1
-    type: 1
-    quality: 3
-    description: Leather pants
-    maxSize: 1
-    sellPrice: 6000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
-      dictList:
-      - Key: Attack
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 200
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 115002
-    name: Fabric pants
-    icon: {fileID: -538220125, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
-    level: 5
-    type: 1
-    quality: 1
-    description: Fabric pants
-    maxSize: 1
-    sellPrice: 8000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
-      dictList:
-      - Key: Attack
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 125002
-    name: Fabric pants
-    icon: {fileID: 603703264, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
-    type: 1
-    quality: 2
-    description: Fabric pants
-    maxSize: 1
-    sellPrice: 10000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
-      dictList:
-      - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 135002
-    name: Fabric pants
-    icon: {fileID: -1336740714, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
-    type: 1
-    quality: 3
-    description: Fabric pants
-    maxSize: 1
-    sellPrice: 12000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
-      dictList:
-      - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 116001
-    name: Leather helmet
-    icon: {fileID: 1200858779, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1049
+    name: Iron chestplate
+    icon: {fileID: 21300000, guid: 61361e27ae6050b448b0de0812fbca0d, type: 3}
     level: 1
     type: 1
-    quality: 1
-    description: Leather helmet
+    subType: 4
+    rarity: 3
+    description: Iron chestplate
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
-      dictList:
-      - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 126001
-    name: Leather helmet
-    icon: {fileID: 1312302007, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 1
-    type: 1
-    quality: 2
-    description: Leather helmet
-    maxSize: 1
-    sellPrice: 4000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
-      dictList:
-      - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 136001
-    name: Leather helmet
-    icon: {fileID: 1727724725, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 1
-    type: 1
-    quality: 3
-    description: Leather helmet
-    maxSize: 1
-    sellPrice: 6000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
-      dictList:
-      - Key: Attack
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 200
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 116002
-    name: Iron helmet
-    icon: {fileID: 921952505, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
-    level: 5
-    type: 1
-    quality: 1
-    description: Iron helmet
-    maxSize: 1
-    sellPrice: 8000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
+        Value: 30
       - Key: Armor
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
         Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 126002
-    name: Iron helmet
-    icon: {fileID: -784216183, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
-    type: 1
-    quality: 2
-    description: Iron helmet
-    maxSize: 1
-    sellPrice: 10000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
-      dictList:
-      - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 136002
-    name: Iron helmet
-    icon: {fileID: 919533521, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
-    type: 1
-    quality: 3
-    description: Iron helmet
-    maxSize: 1
-    sellPrice: 12000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
-      dictList:
-      - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 117001
-    name: Gold ring
-    icon: {fileID: 919855721, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1050
+    name: Iron chestplate
+    icon: {fileID: 21300000, guid: 61361e27ae6050b448b0de0812fbca0d, type: 3}
     level: 1
     type: 1
-    quality: 1
-    description: Gold ring
+    subType: 4
+    rarity: 4
+    description: Iron chestplate
     maxSize: 1
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 5
-      - 5
-      - 5
-      - 5
-      - 10
-      - 50
-      - 5
-      - 5
-      - 10
-      - 5
-      - 1
-      dictList:
-      - Key: Attack
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 127001
-    name: Gold ring
-    icon: {fileID: -1363998936, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 1
-    type: 1
-    quality: 2
-    description: Gold ring
-    maxSize: 1
-    sellPrice: 4000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 10
-      - 7
-      - 10
-      - 6
-      - 20
-      - 100
-      - 10
-      - 10
-      - 20
-      - 7
-      - 2
-      dictList:
-      - Key: Attack
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 6
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 2
-        index: 0
-        isKeyDuplicated: 0
-  - id: 137001
-    name: Gold ring
-    icon: {fileID: 426708809, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 1
-    type: 1
-    quality: 3
-    description: Gold ring
-    maxSize: 1
-    sellPrice: 6000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 20
-      - 9
-      - 20
-      - 7
-      - 30
-      - 200
-      - 15
-      - 20
-      - 30
-      - 9
-      - 3
-      dictList:
-      - Key: Attack
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 7
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 200
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 30
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 3
-        index: 0
-        isKeyDuplicated: 0
-  - id: 117002
-    name: Diamond ring
-    icon: {fileID: 76700248, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
-    level: 5
-    type: 1
-    quality: 1
-    description: Diamond ring
-    maxSize: 1
-    sellPrice: 8000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 40
-      - 11
-      - 40
-      - 8
-      - 50
-      - 400
-      - 20
-      - 40
-      - 40
-      - 11
-      - 4
       dictList:
       - Key: Attack
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: AttackSpeed
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: ArmorPenetration
         Value: 40
-        index: 0
-        isKeyDuplicated: 0
       - Key: CriticalRate
-        Value: 8
-        index: 0
-        isKeyDuplicated: 0
+        Value: 6
       - Key: CriticalDamage
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 60
       - Key: Health
         Value: 400
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 20
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 40
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 11
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 4
-        index: 0
-        isKeyDuplicated: 0
-  - id: 127002
-    name: Diamond ring
-    icon: {fileID: -136212527, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
-    type: 1
-    quality: 2
-    description: Diamond ring
-    maxSize: 1
-    sellPrice: 10000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 80
-      - 13
-      - 80
-      - 9
-      - 60
-      - 800
-      - 25
-      - 80
-      - 50
-      - 13
-      - 5
-      dictList:
-      - Key: Attack
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 9
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 800
-        index: 0
-        isKeyDuplicated: 0
-      - Key: HealthRegen
-        Value: 25
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Armor
-        Value: 80
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Mana
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ManaRegen
-        Value: 13
-        index: 0
-        isKeyDuplicated: 0
-      - Key: MoveSpeed
-        Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 137002
-    name: Diamond ring
-    icon: {fileID: -146122985, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
-    type: 1
-    quality: 3
-    description: Diamond ring
-    maxSize: 1
-    sellPrice: 12000
-    properties:
-      keys:
-      - Attack
-      - AttackSpeed
-      - ArmorPenetration
-      - CriticalRate
-      - CriticalDamage
-      - Health
-      - HealthRegen
-      - Armor
-      - Mana
-      - ManaRegen
-      - MoveSpeed
-      values:
-      - 160
-      - 15
-      - 160
-      - 10
-      - 70
-      - 1600
-      - 30
-      - 160
-      - 60
-      - 15
-      - 6
-      dictList:
-      - Key: Attack
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: AttackSpeed
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-      - Key: ArmorPenetration
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalRate
-        Value: 10
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CriticalDamage
-        Value: 70
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Health
-        Value: 1600
-        index: 0
-        isKeyDuplicated: 0
       - Key: HealthRegen
         Value: 30
-        index: 0
-        isKeyDuplicated: 0
       - Key: Armor
-        Value: 160
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Mana
-        Value: 60
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: ManaRegen
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
+        Value: 4
       - Key: MoveSpeed
         Value: 6
-        index: 0
-        isKeyDuplicated: 0
-  - id: 211001
-    name: Health flask
-    icon: {fileID: -601850719, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 1051
+    name: Leather pants
+    icon: {fileID: 21300000, guid: 2bd5c0a158424a842b0506c8e5acf7bf, type: 3}
     level: 1
-    type: 2
-    quality: 1
-    description: Health flask
-    maxSize: 99
-    sellPrice: 2000
+    type: 1
+    subType: 5
+    rarity: 0
+    description: Leather pants
+    maxSize: 1
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      - CoolDown
-      values:
-      - 300
-      - 15
       dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
       - Key: Health
-        Value: 300
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CoolDown
+        Value: 200
+      - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 221001
-    name: Health flask
-    icon: {fileID: -287485094, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1052
+    name: Leather pants
+    icon: {fileID: 21300000, guid: 2bd5c0a158424a842b0506c8e5acf7bf, type: 3}
     level: 1
-    type: 2
-    quality: 2
-    description: Health flask
-    maxSize: 99
-    sellPrice: 4000
+    type: 1
+    subType: 5
+    rarity: 1
+    description: Leather pants
+    maxSize: 1
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      - CoolDown
-      values:
-      - 600
-      - 15
       dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
       - Key: Health
-        Value: 600
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CoolDown
+        Value: 200
+      - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 231001
-    name: Health flask
-    icon: {fileID: 845386048, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1053
+    name: Leather pants
+    icon: {fileID: 21300000, guid: 2bd5c0a158424a842b0506c8e5acf7bf, type: 3}
     level: 1
-    type: 2
-    quality: 3
-    description: Health flask
-    maxSize: 99
-    sellPrice: 6000
+    type: 1
+    subType: 5
+    rarity: 2
+    description: Leather pants
+    maxSize: 1
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      - CoolDown
-      values:
-      - 1200
-      - 15
       dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
       - Key: Health
-        Value: 1200
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CoolDown
+        Value: 200
+      - Key: HealthRegen
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 212001
-    name: Mana flask
-    icon: {fileID: -519132589, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1054
+    name: Leather pants
+    icon: {fileID: 21300000, guid: 2bd5c0a158424a842b0506c8e5acf7bf, type: 3}
+    level: 1
+    type: 1
+    subType: 5
+    rarity: 3
+    description: Leather pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1055
+    name: Leather pants
+    icon: {fileID: 21300000, guid: 2bd5c0a158424a842b0506c8e5acf7bf, type: 3}
+    level: 1
+    type: 1
+    subType: 5
+    rarity: 4
+    description: Leather pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1056
+    name: Fabric pants
+    icon: {fileID: 21300000, guid: 92dc94890e21125419fb998b44b34bcd, type: 3}
     level: 5
+    type: 1
+    subType: 5
+    rarity: 0
+    description: Fabric pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1057
+    name: Fabric pants
+    icon: {fileID: 21300000, guid: 92dc94890e21125419fb998b44b34bcd, type: 3}
+    level: 5
+    type: 1
+    subType: 5
+    rarity: 1
+    description: Fabric pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1058
+    name: Fabric pants
+    icon: {fileID: 21300000, guid: 92dc94890e21125419fb998b44b34bcd, type: 3}
+    level: 5
+    type: 1
+    subType: 5
+    rarity: 2
+    description: Fabric pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1059
+    name: Fabric pants
+    icon: {fileID: 21300000, guid: 92dc94890e21125419fb998b44b34bcd, type: 3}
+    level: 5
+    type: 1
+    subType: 5
+    rarity: 3
+    description: Fabric pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1060
+    name: Fabric pants
+    icon: {fileID: 21300000, guid: 92dc94890e21125419fb998b44b34bcd, type: 3}
+    level: 5
+    type: 1
+    subType: 5
+    rarity: 4
+    description: Fabric pants
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1061
+    name: Leather helmet
+    icon: {fileID: 21300000, guid: 4da5aebc0fc51cc49a410b1f4fc5fcc2, type: 3}
+    level: 1
+    type: 1
+    subType: 6
+    rarity: 0
+    description: Leather helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1062
+    name: Leather helmet
+    icon: {fileID: 21300000, guid: 4da5aebc0fc51cc49a410b1f4fc5fcc2, type: 3}
+    level: 1
+    type: 1
+    subType: 6
+    rarity: 1
+    description: Leather helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1063
+    name: Leather helmet
+    icon: {fileID: 21300000, guid: 4da5aebc0fc51cc49a410b1f4fc5fcc2, type: 3}
+    level: 1
+    type: 1
+    subType: 6
+    rarity: 2
+    description: Leather helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1064
+    name: Leather helmet
+    icon: {fileID: 21300000, guid: 4da5aebc0fc51cc49a410b1f4fc5fcc2, type: 3}
+    level: 1
+    type: 1
+    subType: 6
+    rarity: 3
+    description: Leather helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1065
+    name: Leather helmet
+    icon: {fileID: 21300000, guid: 4da5aebc0fc51cc49a410b1f4fc5fcc2, type: 3}
+    level: 1
+    type: 1
+    subType: 6
+    rarity: 4
+    description: Leather helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1066
+    name: Iron helmet
+    icon: {fileID: 21300000, guid: 9817e74bac207d149b0a77f9f5e4565e, type: 3}
+    level: 5
+    type: 1
+    subType: 6
+    rarity: 0
+    description: Iron helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1067
+    name: Iron helmet
+    icon: {fileID: 21300000, guid: 9817e74bac207d149b0a77f9f5e4565e, type: 3}
+    level: 5
+    type: 1
+    subType: 6
+    rarity: 1
+    description: Iron helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1068
+    name: Iron helmet
+    icon: {fileID: 21300000, guid: 9817e74bac207d149b0a77f9f5e4565e, type: 3}
+    level: 5
+    type: 1
+    subType: 6
+    rarity: 2
+    description: Iron helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1069
+    name: Iron helmet
+    icon: {fileID: 21300000, guid: 9817e74bac207d149b0a77f9f5e4565e, type: 3}
+    level: 5
+    type: 1
+    subType: 6
+    rarity: 3
+    description: Iron helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1070
+    name: Iron helmet
+    icon: {fileID: 21300000, guid: 9817e74bac207d149b0a77f9f5e4565e, type: 3}
+    level: 5
+    type: 1
+    subType: 6
+    rarity: 4
+    description: Iron helmet
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1071
+    name: Gold ring
+    icon: {fileID: 21300000, guid: 0629c85051c76c04fb40ec98bb893b6a, type: 3}
+    level: 1
+    type: 1
+    subType: 7
+    rarity: 0
+    description: Gold ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1072
+    name: Gold ring
+    icon: {fileID: 21300000, guid: 0629c85051c76c04fb40ec98bb893b6a, type: 3}
+    level: 1
+    type: 1
+    subType: 7
+    rarity: 1
+    description: Gold ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1073
+    name: Gold ring
+    icon: {fileID: 21300000, guid: 0629c85051c76c04fb40ec98bb893b6a, type: 3}
+    level: 1
+    type: 1
+    subType: 7
+    rarity: 2
+    description: Gold ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1074
+    name: Gold ring
+    icon: {fileID: 21300000, guid: 0629c85051c76c04fb40ec98bb893b6a, type: 3}
+    level: 1
+    type: 1
+    subType: 7
+    rarity: 3
+    description: Gold ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1075
+    name: Gold ring
+    icon: {fileID: 21300000, guid: 0629c85051c76c04fb40ec98bb893b6a, type: 3}
+    level: 1
+    type: 1
+    subType: 7
+    rarity: 4
+    description: Gold ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 20
+      - Key: AttackSpeed
+        Value: 3
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: CriticalRate
+        Value: 3
+      - Key: CriticalDamage
+        Value: 30
+      - Key: Health
+        Value: 200
+      - Key: HealthRegen
+        Value: 15
+      - Key: Armor
+        Value: 20
+      - Key: Mana
+        Value: 10
+      - Key: ManaRegen
+        Value: 2
+      - Key: MoveSpeed
+        Value: 3
+  - id: 1076
+    name: Diamond ring
+    icon: {fileID: 21300000, guid: ad223424e737e1841a331d98c56148fd, type: 3}
+    level: 5
+    type: 1
+    subType: 7
+    rarity: 0
+    description: Diamond ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1077
+    name: Diamond ring
+    icon: {fileID: 21300000, guid: ad223424e737e1841a331d98c56148fd, type: 3}
+    level: 5
+    type: 1
+    subType: 7
+    rarity: 1
+    description: Diamond ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1078
+    name: Diamond ring
+    icon: {fileID: 21300000, guid: ad223424e737e1841a331d98c56148fd, type: 3}
+    level: 5
+    type: 1
+    subType: 7
+    rarity: 2
+    description: Diamond ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1079
+    name: Diamond ring
+    icon: {fileID: 21300000, guid: ad223424e737e1841a331d98c56148fd, type: 3}
+    level: 5
+    type: 1
+    subType: 7
+    rarity: 3
+    description: Diamond ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 1080
+    name: Diamond ring
+    icon: {fileID: 21300000, guid: ad223424e737e1841a331d98c56148fd, type: 3}
+    level: 5
+    type: 1
+    subType: 7
+    rarity: 4
+    description: Diamond ring
+    maxSize: 1
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
+        Value: 40
+      - Key: AttackSpeed
+        Value: 6
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: CriticalRate
+        Value: 6
+      - Key: CriticalDamage
+        Value: 60
+      - Key: Health
+        Value: 400
+      - Key: HealthRegen
+        Value: 30
+      - Key: Armor
+        Value: 40
+      - Key: Mana
+        Value: 20
+      - Key: ManaRegen
+        Value: 4
+      - Key: MoveSpeed
+        Value: 6
+  - id: 2001
+    name: Health flask
+    icon: {fileID: 21300000, guid: e76d151befffb7945a2164759062c77d, type: 3}
+    level: 1
     type: 2
-    quality: 1
+    subType: 0
+    rarity: 0
+    description: Health flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 100
+      - Key: Cooldown
+        Value: 15
+  - id: 2002
+    name: Health flask
+    icon: {fileID: 21300000, guid: e76d151befffb7945a2164759062c77d, type: 3}
+    level: 1
+    type: 2
+    subType: 0
+    rarity: 1
+    description: Health flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 350
+      - Key: Cooldown
+        Value: 15
+  - id: 2003
+    name: Health flask
+    icon: {fileID: 21300000, guid: e76d151befffb7945a2164759062c77d, type: 3}
+    level: 1
+    type: 2
+    subType: 0
+    rarity: 2
+    description: Health flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 1000
+      - Key: Cooldown
+        Value: 15
+  - id: 2004
+    name: Health flask
+    icon: {fileID: 21300000, guid: e76d151befffb7945a2164759062c77d, type: 3}
+    level: 1
+    type: 2
+    subType: 0
+    rarity: 3
+    description: Health flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 2500
+      - Key: Cooldown
+        Value: 15
+  - id: 2005
+    name: Health flask
+    icon: {fileID: 21300000, guid: e76d151befffb7945a2164759062c77d, type: 3}
+    level: 1
+    type: 2
+    subType: 0
+    rarity: 4
+    description: Health flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 6500
+      - Key: Cooldown
+        Value: 15
+  - id: 2006
+    name: Mana flask
+    icon: {fileID: 21300000, guid: d7a0f00ea8fe47540a7b52b51a9594c0, type: 3}
+    level: 1
+    type: 2
+    subType: 1
+    rarity: 0
     description: Mana flask
     maxSize: 99
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Mana
-      - CoolDown
-      values:
-      - 50
-      - 15
+      dictList:
+      - Key: Mana
+        Value: 30
+      - Key: Cooldown
+        Value: 15
+  - id: 2007
+    name: Mana flask
+    icon: {fileID: 21300000, guid: d7a0f00ea8fe47540a7b52b51a9594c0, type: 3}
+    level: 1
+    type: 2
+    subType: 1
+    rarity: 1
+    description: Mana flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
       dictList:
       - Key: Mana
         Value: 50
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CoolDown
+      - Key: Cooldown
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 222001
+  - id: 2008
     name: Mana flask
-    icon: {fileID: 912340208, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: d7a0f00ea8fe47540a7b52b51a9594c0, type: 3}
+    level: 1
     type: 2
-    quality: 2
+    subType: 1
+    rarity: 2
     description: Mana flask
     maxSize: 99
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Mana
-      - CoolDown
-      values:
-      - 100
-      - 15
       dictList:
       - Key: Mana
-        Value: 100
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CoolDown
+        Value: 70
+      - Key: Cooldown
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 232001
+  - id: 2009
     name: Mana flask
-    icon: {fileID: 1786522684, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
-    level: 5
+    icon: {fileID: 21300000, guid: d7a0f00ea8fe47540a7b52b51a9594c0, type: 3}
+    level: 1
     type: 2
-    quality: 3
+    subType: 1
+    rarity: 3
     description: Mana flask
     maxSize: 99
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Mana
-      - CoolDown
-      values:
-      - 200
-      - 15
       dictList:
       - Key: Mana
-        Value: 200
-        index: 0
-        isKeyDuplicated: 0
-      - Key: CoolDown
+        Value: 90
+      - Key: Cooldown
         Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 310001
+  - id: 2010
+    name: Mana flask
+    icon: {fileID: 21300000, guid: d7a0f00ea8fe47540a7b52b51a9594c0, type: 3}
+    level: 1
+    type: 2
+    subType: 1
+    rarity: 4
+    description: Mana flask
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Mana
+        Value: 110
+      - Key: Cooldown
+        Value: 15
+  - id: 3001
     name: Skill book rank 1
-    icon: {fileID: -1879649195, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: 274183ea5a44f7d4eadc9eff2e196496, type: 3}
     level: 1
     type: 3
-    quality: 1
-    description: Use this book to receive active skill points. Those point are used
-      in the skill panel to upgrade the skills
+    subType: 0
+    rarity: 0
+    description: Skill book rank 1
     maxSize: 99
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - SkillPoint
-      values:
-      - 1
       dictList:
       - Key: SkillPoint
         Value: 1
-        index: 0
-        isKeyDuplicated: 0
-  - id: 320002
+  - id: 3002
     name: Skill book rank 2
-    icon: {fileID: 141384448, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: dff91a2b3d1a88e43bc811b8fba83e8c, type: 3}
     level: 1
     type: 3
-    quality: 2
-    description: Use this book to receive active skill points. Those point are used
-      in the skill panel to upgrade the skills
+    subType: 0
+    rarity: 1
+    description: Skill book rank 2
     maxSize: 99
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - SkillPoint
-      values:
-      - 5
       dictList:
       - Key: SkillPoint
         Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 330003
+  - id: 3003
     name: Skill book rank 3
-    icon: {fileID: 1629621418, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: c63b668ace7ae64488d76a397fc89bb0, type: 3}
     level: 1
     type: 3
-    quality: 3
-    description: Use this book to receive active skill points. Those point are used
-      in the skill panel to upgrade the skills
+    subType: 0
+    rarity: 2
+    description: Skill book rank 3
     maxSize: 99
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - SkillPoint
-      values:
-      - 25
       dictList:
       - Key: SkillPoint
         Value: 25
-        index: 0
-        isKeyDuplicated: 0
-  - id: 411001
+  - id: 3004
+    name: Skill book rank 4
+    icon: {fileID: 21300000, guid: d49e8946a0144054097056dedd6ca876, type: 3}
+    level: 1
+    type: 3
+    subType: 0
+    rarity: 3
+    description: Skill book rank 4
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: SkillPoint
+        Value: 125
+  - id: 3005
+    name: Skill book rank 5
+    icon: {fileID: 21300000, guid: f22f9e89c76e7d042a22d77dc70e706c, type: 3}
+    level: 1
+    type: 3
+    subType: 0
+    rarity: 4
+    description: Skill book rank 5
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: SkillPoint
+        Value: 625
+  - id: 4001
     name: Apple
-    icon: {fileID: 43636790, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+    icon: {fileID: 21300000, guid: 3f56497ed1c1bcb4a80287602488ff77, type: 3}
     level: 1
     type: 4
-    quality: 1
-    description: Grants you a temporary effect
+    subType: 0
+    rarity: 0
+    description: Apple
     maxSize: 99
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - Duration
-      values:
-      - 50
-      - 300
       dictList:
       - Key: Attack
-        Value: 50
-        index: 0
-        isKeyDuplicated: 0
+        Value: 20
       - Key: Duration
         Value: 300
-        index: 0
-        isKeyDuplicated: 0
-  - id: 421001
+  - id: 4002
     name: Apple
-    icon: {fileID: 1103465712, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+    icon: {fileID: 21300000, guid: 3f56497ed1c1bcb4a80287602488ff77, type: 3}
     level: 1
     type: 4
-    quality: 2
-    description: Grants you a temporary effect
+    subType: 0
+    rarity: 1
+    description: Apple
     maxSize: 99
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - Duration
-      values:
-      - 150
-      - 600
       dictList:
       - Key: Attack
-        Value: 150
-        index: 0
-        isKeyDuplicated: 0
+        Value: 40
       - Key: Duration
         Value: 600
-        index: 0
-        isKeyDuplicated: 0
-  - id: 431001
+  - id: 4003
     name: Apple
-    icon: {fileID: -909118808, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+    icon: {fileID: 21300000, guid: 3f56497ed1c1bcb4a80287602488ff77, type: 3}
     level: 1
     type: 4
-    quality: 3
-    description: Grants you a temporary effect
+    subType: 0
+    rarity: 2
+    description: Apple
     maxSize: 99
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      - Duration
-      values:
-      - 500
-      - 900
       dictList:
       - Key: Attack
-        Value: 500
-        index: 0
-        isKeyDuplicated: 0
+        Value: 80
       - Key: Duration
         Value: 900
-        index: 0
-        isKeyDuplicated: 0
-  - id: 412001
-    name: Strawberry
-    icon: {fileID: 1035512259, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 4004
+    name: Apple
+    icon: {fileID: 21300000, guid: 3f56497ed1c1bcb4a80287602488ff77, type: 3}
     level: 1
     type: 4
-    quality: 1
-    description: Grants you a temporary effect
+    subType: 0
+    rarity: 3
+    description: Apple
     maxSize: 99
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      - Duration
-      values:
-      - 500
-      - 300
       dictList:
-      - Key: Health
-        Value: 500
-        index: 0
-        isKeyDuplicated: 0
+      - Key: Attack
+        Value: 160
       - Key: Duration
-        Value: 300
-        index: 0
-        isKeyDuplicated: 0
-  - id: 422001
-    name: Strawberry
-    icon: {fileID: 1579955822, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+        Value: 1200
+  - id: 4005
+    name: Apple
+    icon: {fileID: 21300000, guid: 3f56497ed1c1bcb4a80287602488ff77, type: 3}
     level: 1
     type: 4
-    quality: 2
-    description: Grants you a temporary effect
+    subType: 0
+    rarity: 4
+    description: Apple
     maxSize: 99
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      - Duration
-      values:
-      - 1500
-      - 600
       dictList:
-      - Key: Health
+      - Key: Attack
+        Value: 320
+      - Key: Duration
         Value: 1500
-        index: 0
-        isKeyDuplicated: 0
-      - Key: Duration
-        Value: 600
-        index: 0
-        isKeyDuplicated: 0
-  - id: 432001
-    name: Strawberry
-    icon: {fileID: 1974020937, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+  - id: 4006
+    name: Strawbery
+    icon: {fileID: 21300000, guid: 8df80af7cfa082248a736534e87e2629, type: 3}
     level: 1
     type: 4
-    quality: 3
-    description: Grants you a temporary effect
+    subType: 1
+    rarity: 0
+    description: Strawbery
     maxSize: 99
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      - Duration
-      values:
-      - 5000
-      - 900
       dictList:
       - Key: Health
-        Value: 5000
-        index: 0
-        isKeyDuplicated: 0
+        Value: 200
+      - Key: Duration
+        Value: 300
+  - id: 4007
+    name: Strawbery
+    icon: {fileID: 21300000, guid: 8df80af7cfa082248a736534e87e2629, type: 3}
+    level: 1
+    type: 4
+    subType: 1
+    rarity: 1
+    description: Strawbery
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 400
+      - Key: Duration
+        Value: 600
+  - id: 4008
+    name: Strawbery
+    icon: {fileID: 21300000, guid: 8df80af7cfa082248a736534e87e2629, type: 3}
+    level: 1
+    type: 4
+    subType: 1
+    rarity: 2
+    description: Strawbery
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 800
       - Key: Duration
         Value: 900
-        index: 0
-        isKeyDuplicated: 0
-  - id: 511001
-    name: Attack dust
-    icon: {fileID: 704783535, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+  - id: 4009
+    name: Strawbery
+    icon: {fileID: 21300000, guid: 8df80af7cfa082248a736534e87e2629, type: 3}
+    level: 1
+    type: 4
+    subType: 1
+    rarity: 3
+    description: Strawbery
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 1600
+      - Key: Duration
+        Value: 1200
+  - id: 4010
+    name: Strawbery
+    icon: {fileID: 21300000, guid: 8df80af7cfa082248a736534e87e2629, type: 3}
+    level: 1
+    type: 4
+    subType: 1
+    rarity: 4
+    description: Strawbery
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Health
+        Value: 3200
+      - Key: Duration
+        Value: 1500
+  - id: 4011
+    name: Lemon
+    icon: {fileID: 21300000, guid: a4babba671426f944b601d11ebd0c1f0, type: 3}
+    level: 1
+    type: 4
+    subType: 2
+    rarity: 0
+    description: Lemon
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: MoveSpeed
+        Value: 5
+      - Key: Duration
+        Value: 300
+  - id: 4012
+    name: Lemon
+    icon: {fileID: 21300000, guid: a4babba671426f944b601d11ebd0c1f0, type: 3}
+    level: 1
+    type: 4
+    subType: 2
+    rarity: 1
+    description: Lemon
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: MoveSpeed
+        Value: 10
+      - Key: Duration
+        Value: 600
+  - id: 4013
+    name: Lemon
+    icon: {fileID: 21300000, guid: a4babba671426f944b601d11ebd0c1f0, type: 3}
+    level: 1
+    type: 4
+    subType: 2
+    rarity: 2
+    description: Lemon
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: MoveSpeed
+        Value: 15
+      - Key: Duration
+        Value: 900
+  - id: 4014
+    name: Lemon
+    icon: {fileID: 21300000, guid: a4babba671426f944b601d11ebd0c1f0, type: 3}
+    level: 1
+    type: 4
+    subType: 2
+    rarity: 3
+    description: Lemon
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: MoveSpeed
+        Value: 20
+      - Key: Duration
+        Value: 1200
+  - id: 4015
+    name: Lemon
+    icon: {fileID: 21300000, guid: a4babba671426f944b601d11ebd0c1f0, type: 3}
+    level: 1
+    type: 4
+    subType: 2
+    rarity: 4
+    description: Lemon
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: MoveSpeed
+        Value: 25
+      - Key: Duration
+        Value: 1500
+  - id: 4016
+    name: Grape
+    icon: {fileID: 21300000, guid: f337524f21136614f840547d6686e6bf, type: 3}
+    level: 1
+    type: 4
+    subType: 3
+    rarity: 0
+    description: Grape
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 20
+      - Key: Duration
+        Value: 300
+  - id: 4017
+    name: Grape
+    icon: {fileID: 21300000, guid: f337524f21136614f840547d6686e6bf, type: 3}
+    level: 1
+    type: 4
+    subType: 3
+    rarity: 1
+    description: Grape
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 40
+      - Key: Duration
+        Value: 600
+  - id: 4018
+    name: Grape
+    icon: {fileID: 21300000, guid: f337524f21136614f840547d6686e6bf, type: 3}
+    level: 1
+    type: 4
+    subType: 3
+    rarity: 2
+    description: Grape
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 80
+      - Key: Duration
+        Value: 900
+  - id: 4019
+    name: Grape
+    icon: {fileID: 21300000, guid: f337524f21136614f840547d6686e6bf, type: 3}
+    level: 1
+    type: 4
+    subType: 3
+    rarity: 3
+    description: Grape
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 160
+      - Key: Duration
+        Value: 1200
+  - id: 4020
+    name: Grape
+    icon: {fileID: 21300000, guid: f337524f21136614f840547d6686e6bf, type: 3}
+    level: 1
+    type: 4
+    subType: 3
+    rarity: 4
+    description: Grape
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 320
+      - Key: Duration
+        Value: 1500
+  - id: 4021
+    name: Pear
+    icon: {fileID: 21300000, guid: ad500f1e9693fc845b40855369f9a766, type: 3}
+    level: 1
+    type: 4
+    subType: 4
+    rarity: 0
+    description: Pear
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 20
+      - Key: Duration
+        Value: 300
+  - id: 4022
+    name: Pear
+    icon: {fileID: 21300000, guid: ad500f1e9693fc845b40855369f9a766, type: 3}
+    level: 1
+    type: 4
+    subType: 4
+    rarity: 1
+    description: Pear
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 40
+      - Key: Duration
+        Value: 600
+  - id: 4023
+    name: Pear
+    icon: {fileID: 21300000, guid: ad500f1e9693fc845b40855369f9a766, type: 3}
+    level: 1
+    type: 4
+    subType: 4
+    rarity: 2
+    description: Pear
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 80
+      - Key: Duration
+        Value: 900
+  - id: 4024
+    name: Pear
+    icon: {fileID: 21300000, guid: ad500f1e9693fc845b40855369f9a766, type: 3}
+    level: 1
+    type: 4
+    subType: 4
+    rarity: 3
+    description: Pear
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 160
+      - Key: Duration
+        Value: 1200
+  - id: 4025
+    name: Pear
+    icon: {fileID: 21300000, guid: ad500f1e9693fc845b40855369f9a766, type: 3}
+    level: 1
+    type: 4
+    subType: 4
+    rarity: 4
+    description: Pear
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 320
+      - Key: Duration
+        Value: 1500
+  - id: 4026
+    name: Chili
+    icon: {fileID: 21300000, guid: 68857b378a48c8a4f9c5e7791cc9deae, type: 3}
+    level: 1
+    type: 4
+    subType: 5
+    rarity: 0
+    description: Chili
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 5
+      - Key: Duration
+        Value: 300
+  - id: 4027
+    name: Chili
+    icon: {fileID: 21300000, guid: 68857b378a48c8a4f9c5e7791cc9deae, type: 3}
+    level: 1
+    type: 4
+    subType: 5
+    rarity: 1
+    description: Chili
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 10
+      - Key: Duration
+        Value: 600
+  - id: 4028
+    name: Chili
+    icon: {fileID: 21300000, guid: 68857b378a48c8a4f9c5e7791cc9deae, type: 3}
+    level: 1
+    type: 4
+    subType: 5
+    rarity: 2
+    description: Chili
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 15
+      - Key: Duration
+        Value: 900
+  - id: 4029
+    name: Chili
+    icon: {fileID: 21300000, guid: 68857b378a48c8a4f9c5e7791cc9deae, type: 3}
+    level: 1
+    type: 4
+    subType: 5
+    rarity: 3
+    description: Chili
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 20
+      - Key: Duration
+        Value: 1200
+  - id: 4030
+    name: Chili
+    icon: {fileID: 21300000, guid: 68857b378a48c8a4f9c5e7791cc9deae, type: 3}
+    level: 1
+    type: 4
+    subType: 5
+    rarity: 4
+    description: Chili
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 25
+      - Key: Duration
+        Value: 1500
+  - id: 5001
+    name: Topaz
+    icon: {fileID: 21300000, guid: ec07213b6ac30e04e93974ea02f37bd6, type: 3}
     level: 1
     type: 5
-    quality: 1
-    description: It is used at jeweler to increase stats on equipment
+    subType: 0
+    rarity: 0
+    description: Topaz
     maxSize: 99
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      values:
-      - 5
       dictList:
       - Key: Attack
         Value: 5
-        index: 0
-        isKeyDuplicated: 0
-  - id: 521001
-    name: Attack dust
-    icon: {fileID: 1229465797, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+  - id: 5002
+    name: Topaz
+    icon: {fileID: 21300000, guid: ec07213b6ac30e04e93974ea02f37bd6, type: 3}
     level: 1
     type: 5
-    quality: 2
-    description: It is used at jeweler to increase stats on equipment
+    subType: 0
+    rarity: 1
+    description: Topaz
     maxSize: 99
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      values:
-      - 15
       dictList:
       - Key: Attack
-        Value: 15
-        index: 0
-        isKeyDuplicated: 0
-  - id: 531001
-    name: Attack dust
-    icon: {fileID: 1235236881, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+        Value: 10
+  - id: 5003
+    name: Topaz
+    icon: {fileID: 21300000, guid: ec07213b6ac30e04e93974ea02f37bd6, type: 3}
     level: 1
     type: 5
-    quality: 3
-    description: It is used at jeweler to increase stats on equipment
+    subType: 0
+    rarity: 2
+    description: Topaz
     maxSize: 99
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Attack
-      values:
-      - 45
       dictList:
       - Key: Attack
-        Value: 45
-        index: 0
-        isKeyDuplicated: 0
-  - id: 512001
-    name: Health dust
-    icon: {fileID: -1556961822, guid: 0c592e22e30c331409ebbbaa3715df65, type: 3}
+        Value: 20
+  - id: 5004
+    name: Topaz
+    icon: {fileID: 21300000, guid: ec07213b6ac30e04e93974ea02f37bd6, type: 3}
     level: 1
     type: 5
-    quality: 1
-    description: It is used at jeweler to increase stats on equipment
+    subType: 0
+    rarity: 3
+    description: Topaz
     maxSize: 99
-    sellPrice: 2000
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      values:
-      - 50
       dictList:
-      - Key: Health
+      - Key: Attack
+        Value: 40
+  - id: 5005
+    name: Topaz
+    icon: {fileID: 21300000, guid: ec07213b6ac30e04e93974ea02f37bd6, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 4
+    description: Topaz
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Attack
         Value: 50
-        index: 0
-        isKeyDuplicated: 0
-  - id: 522001
-    name: Health dust
-    icon: {fileID: -1282821877, guid: c079d8924da78ba44bdd43688efc0d75, type: 3}
+  - id: 5006
+    name: Ruby
+    icon: {fileID: 21300000, guid: 6327272a768538e4280fa1e6f4431520, type: 3}
     level: 1
     type: 5
-    quality: 2
-    description: It is used at jeweler to increase stats on equipment
+    subType: 0
+    rarity: 0
+    description: Ruby
     maxSize: 99
-    sellPrice: 4000
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      values:
-      - 150
       dictList:
-      - Key: Health
-        Value: 150
-        index: 0
-        isKeyDuplicated: 0
-  - id: 532001
-    name: Health dust
-    icon: {fileID: 627101242, guid: 3d5b6cf80b01a9d438ab993171926776, type: 3}
+      - Key: AttackSpeed
+        Value: 50
+  - id: 5007
+    name: Ruby
+    icon: {fileID: 21300000, guid: 6327272a768538e4280fa1e6f4431520, type: 3}
     level: 1
     type: 5
-    quality: 3
-    description: It is used at jeweler to increase stats on equipment
+    subType: 0
+    rarity: 1
+    description: Ruby
     maxSize: 99
-    sellPrice: 6000
+    sellPrice: 0
     properties:
-      keys:
-      - Health
-      values:
-      - 340
       dictList:
-      - Key: Health
-        Value: 340
-        index: 0
-        isKeyDuplicated: 0
+      - Key: AttackSpeed
+        Value: 100
+  - id: 5008
+    name: Ruby
+    icon: {fileID: 21300000, guid: 6327272a768538e4280fa1e6f4431520, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 2
+    description: Ruby
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 200
+  - id: 5009
+    name: Ruby
+    icon: {fileID: 21300000, guid: 6327272a768538e4280fa1e6f4431520, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 3
+    description: Ruby
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 400
+  - id: 5010
+    name: Ruby
+    icon: {fileID: 21300000, guid: 6327272a768538e4280fa1e6f4431520, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 4
+    description: Ruby
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: AttackSpeed
+        Value: 500
+  - id: 5011
+    name: Amethyst
+    icon: {fileID: 21300000, guid: 64af50414582c4547bea53a59a7e6f49, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 0
+    description: Amethyst
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 5
+  - id: 5012
+    name: Amethyst
+    icon: {fileID: 21300000, guid: 64af50414582c4547bea53a59a7e6f49, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 1
+    description: Amethyst
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 10
+  - id: 5013
+    name: Amethyst
+    icon: {fileID: 21300000, guid: 64af50414582c4547bea53a59a7e6f49, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 2
+    description: Amethyst
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 20
+  - id: 5014
+    name: Amethyst
+    icon: {fileID: 21300000, guid: 64af50414582c4547bea53a59a7e6f49, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 3
+    description: Amethyst
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 40
+  - id: 5015
+    name: Amethyst
+    icon: {fileID: 21300000, guid: 64af50414582c4547bea53a59a7e6f49, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 4
+    description: Amethyst
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: ArmorPenetration
+        Value: 50
+  - id: 5016
+    name: Diamond
+    icon: {fileID: 21300000, guid: d0fbee8fbe49edb47b1decbf54221909, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 0
+    description: Diamond
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 5
+  - id: 5017
+    name: Diamond
+    icon: {fileID: 21300000, guid: d0fbee8fbe49edb47b1decbf54221909, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 1
+    description: Diamond
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 10
+  - id: 5018
+    name: Diamond
+    icon: {fileID: 21300000, guid: d0fbee8fbe49edb47b1decbf54221909, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 2
+    description: Diamond
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 20
+  - id: 5019
+    name: Diamond
+    icon: {fileID: 21300000, guid: d0fbee8fbe49edb47b1decbf54221909, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 3
+    description: Diamond
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 40
+  - id: 5020
+    name: Diamond
+    icon: {fileID: 21300000, guid: d0fbee8fbe49edb47b1decbf54221909, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 4
+    description: Diamond
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: Armor
+        Value: 50
+  - id: 5021
+    name: Heliodor
+    icon: {fileID: 21300000, guid: 2c386265c1d9254428da72f0b210bfd3, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 0
+    description: Heliodor
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: CriticalRate
+        Value: 1
+  - id: 5022
+    name: Heliodor
+    icon: {fileID: 21300000, guid: 2c386265c1d9254428da72f0b210bfd3, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 1
+    description: Heliodor
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: CriticalRate
+        Value: 2
+  - id: 5023
+    name: Heliodor
+    icon: {fileID: 21300000, guid: 2c386265c1d9254428da72f0b210bfd3, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 2
+    description: Heliodor
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: CriticalRate
+        Value: 3
+  - id: 5024
+    name: Heliodor
+    icon: {fileID: 21300000, guid: 2c386265c1d9254428da72f0b210bfd3, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 3
+    description: Heliodor
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: CriticalRate
+        Value: 4
+  - id: 5025
+    name: Heliodor
+    icon: {fileID: 21300000, guid: 2c386265c1d9254428da72f0b210bfd3, type: 3}
+    level: 1
+    type: 5
+    subType: 0
+    rarity: 4
+    description: Heliodor
+    maxSize: 99
+    sellPrice: 0
+    properties:
+      dictList:
+      - Key: CriticalRate
+        Value: 5

@@ -20,9 +20,11 @@ public class ItemToPick : MonoBehaviour, IPointerClickHandler
 
     public void SetUpUI(ItemObject _itemObject)
     {
+        gameObject.SetActive(true);
         itemObject = _itemObject;
-        itemIcon.sprite = ItemManager.Instance.itemDict[itemObject.itemId].icon;
-        itemName.text = ItemManager.Instance.itemDict[itemObject.itemId].name;
+        itemIcon.sprite = itemObject.item.itemData.icon;
+        itemName.text = itemObject.item.itemData.name;
+        itemName.color = AssetManager.Instance.GetColorRarityByKey(itemObject.item.itemData.rarity.ToString());
     }
     public void OnPointerClick(PointerEventData eventData)
     {

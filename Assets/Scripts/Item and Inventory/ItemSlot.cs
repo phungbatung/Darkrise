@@ -22,6 +22,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     {
         if (itemInventory.IsEmpty())
         {
+            backgroundImage.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(ItemRarity.Common.ToString());
             itemImage.color = new Color(1, 1, 1, 0);
             itemImage.sprite = null;
             amountText.text = "";
@@ -29,8 +30,8 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
         }
         else
         {
-            itemImage.color = new Color(1, 1, 1, 1);
             backgroundImage.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(itemInventory.itemData.rarity.ToString());
+            itemImage.color = new Color(1, 1, 1, 1);
             itemImage.sprite = itemInventory.itemData.icon;
             if (itemInventory.amount <= 1)
                 amountText.text = "";
@@ -47,34 +48,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
         }
     }
 
-    public void UpdateUI(ItemInventory _itemInventory)
+    public void SetItem(ItemInventory _itemInventory)
     {
         itemInventory = _itemInventory;
-        if (_itemInventory.IsEmpty())
-        {
-            itemImage.color = new Color(1, 1, 1, 0);
-            itemImage.sprite = null;
-            amountText.text = "";
-            enhanceLevel.text = "";
-        }
-        else
-        {
-            itemImage.color = new Color(1, 1, 1, 1);
-            itemImage.sprite = _itemInventory.itemData.icon;
-            if (_itemInventory.amount <= 1)
-                amountText.text = "";
-            else
-                amountText.text = _itemInventory.amount.ToString();
-
-            if(_itemInventory.itemData.type == ItemType.Equipment)
-            {
-                enhanceLevel.text = itemInventory.equipmentProperties.enhanceLevel < 1 ? "" : $"+{itemInventory.equipmentProperties.enhanceLevel}";
-            }
-            else
-            {
-                enhanceLevel.text = "";
-            }
-        }
+        UpdateUI();
     }
 
     protected virtual Sprite GetDefaultBackGround()

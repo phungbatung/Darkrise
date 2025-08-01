@@ -7321,7 +7321,6 @@ Transform:
   - {fileID: 490541513}
   - {fileID: 1065222609}
   - {fileID: 464891958}
-  - {fileID: 205626154079998160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2129173818
@@ -7367,7 +7366,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2044299532}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3096200713190961398, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
       propertyPath: m_Name
@@ -7413,16 +7412,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
+      propertyPath: itemRarityColors.Array.data[0].Value.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
+      propertyPath: itemRarityColors.Array.data[1].Value.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
+      propertyPath: itemRarityColors.Array.data[2].Value.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
+      propertyPath: itemRarityColors.Array.data[3].Value.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
+      propertyPath: itemRarityColors.Array.data[4].Value.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
---- !u!4 &205626154079998160 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4124636852852160797, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
-  m_PrefabInstance: {fileID: 205626154079998159}
-  m_PrefabAsset: {fileID: 0}
 --- !u!223 &428620719105822208
 Canvas:
   m_ObjectHideFlags: 0
@@ -8471,3 +8485,4 @@ SceneRoots:
   - {fileID: 1692319193}
   - {fileID: 414873842}
   - {fileID: 2041205031558345533}
+  - {fileID: 205626154079998159}

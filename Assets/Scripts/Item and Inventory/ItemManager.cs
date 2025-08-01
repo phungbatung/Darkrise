@@ -265,7 +265,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Buff
     public void UseBuff(ItemInventory _item)
     {
-        if (_item.itemData.type != ItemType.Buff)
+        if (_item.itemData.type != ItemType.Food)
             return;
         PlayerManager.Instance.player.stats.BuffManager.StartBuff(_item.itemData);
         _item.RemoveItem();
@@ -328,6 +328,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Item database
     public void GenerateItemDataDictionary()
     {
+        itemDict[ItemData.Empty.id] = ItemData.Empty;
         foreach (ItemData item in itemDatabase.itemList)
         {
             itemDict[item.id] = item;

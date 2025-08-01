@@ -16,7 +16,7 @@ public class EquipmentUI : MonoBehaviour
     {
         for (int i = 0; i < itemSlots.Length; i++) 
         {
-            itemSlots[i].UpdateUI(equipedItem[i]);
+            itemSlots[i].SetItem(equipedItem[i]);
         }
     }
 }

@@ -92,7 +92,7 @@ public class InventoryUI : MonoBehaviour
         }
         for (int i = 0; i < slotCount; i++)
         {
-            itemSlots[i].UpdateUI(inventoryItem[(currentPage-1)*24 + i]);
+            itemSlots[i].SetItem(inventoryItem[(currentPage-1)*24 + i]);
         }
         pageCountTMP.text = $"{currentPage}/{getTotalPage()}";
         SetUpButton();

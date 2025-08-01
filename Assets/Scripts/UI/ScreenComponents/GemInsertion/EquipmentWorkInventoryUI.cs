@@ -22,7 +22,7 @@ public class EquipmentWorkInventoryUI : InventoryUI
         for (int i = 0; i < slotCount; i++)
         {
             Debug.Log((currentPage - 1) * 24 + i);
-            itemSlots[i].UpdateUI(inventoryItem[(currentPage - 1) * 24 + i]);
+            itemSlots[i].SetItem(inventoryItem[(currentPage - 1) * 24 + i]);
             itemSlots[i].alternativeClickAction = null;
             if (onWorkItem != null && itemSlots[i].itemInventory == onWorkItem)
             {

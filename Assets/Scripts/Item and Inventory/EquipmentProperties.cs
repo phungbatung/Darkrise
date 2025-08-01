@@ -13,7 +13,7 @@ public class EquipmentProperties
 
     public int unlockedGemsSlot { get; private set; }
     private int gemSlotsLimit { get; set; } = 3;
-    public ItemInventory[] gems { get; private set; }
+    public ItemData[] gems { get; private set; }
     private int unlockPrice { get; } = 6789;
     private int unlockPriceIncreaseRatePerSlot { get; } = 3;
 
@@ -28,15 +28,15 @@ public class EquipmentProperties
         baseProperties = _baseProperties;
         properties = _properties;
         unlockedGemsSlot = 0;
-        gems = new ItemInventory[gemSlotsLimit];
+        gems = new ItemData[gemSlotsLimit];
         for (int i =0; i<gems.Length; i++)
         {
-            gems[i] = new ItemInventory();
+            gems[i] = ItemData.Empty;
         }
     }
 
     public EquipmentProperties(SerializableDictionary<string, string> _baseProperties, 
-        SerializableDictionary<string, string> _properties, int _unlockedGemsSlot, ItemInventory[] _gems, int _enhanceLevel)
+        SerializableDictionary<string, string> _properties, int _unlockedGemsSlot, ItemData[] _gems, int _enhanceLevel)
     {
         baseProperties = new();
         foreach (var kvp in _baseProperties)
@@ -61,9 +61,9 @@ public class EquipmentProperties
         //add gem properties
         for (int i = 0; i < unlockedGemsSlot; i++)
         {
-            if (gems[i] == null)
+            if (gems[i] == ItemData.Empty)
                 continue;
-            ItemData item = gems[i].itemData;
+            ItemData item = gems[i];
             foreach (KeyValuePair<string, string> kvp in item.properties)
             {
                 
@@ -164,9 +164,9 @@ public class EquipmentProperties
         Dictionary<string, string> _properties = new();
         for (int i = 0; i < unlockedGemsSlot; i++)
         {
-            if (gems[i].IsEmpty())
+            if (gems[i]==ItemData.Empty)
                 continue;
-            ItemData item = gems[i].itemData;
+            ItemData item = gems[i];
             foreach (KeyValuePair<string, string> kvp in item.properties)
             {
                 if (_properties.ContainsKey(kvp.Key))
@@ -261,9 +261,9 @@ public class EquipmentProperties
 
     public bool TryPutGemToSlot(int slotIndex, ItemInventory item)
     {
-        if (slotIndex>=unlockedGemsSlot || item.IsEmpty() || item.itemData.type != ItemType.MagicDust)
+        if (slotIndex>=unlockedGemsSlot || item.IsEmpty() || item.itemData.type != ItemType.Gem)
             return false;
-        gems[slotIndex] = item;
+        gems[slotIndex] = item.itemData;
         item.RemoveItem();
         return true;
     }
@@ -272,7 +272,7 @@ public class EquipmentProperties
     {
         if (ItemManager.Instance.TryAddItem(gems[slotIndex]))
         {
-            gems[slotIndex] = new ItemInventory();
+            gems[slotIndex] = ItemData.Empty;
             return true;
         }
 

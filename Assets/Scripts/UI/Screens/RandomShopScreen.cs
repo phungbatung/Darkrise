@@ -27,7 +27,7 @@ public class RandomShopScreen : BlitzyUI.Screen
             Destroy(listItemParent.GetChild(i).gameObject);
 
         List<ItemData> itemsData = ItemManager.Instance.GetAllItemOfType(new ItemType[] { ItemType.Equipment, 
-                                    ItemType.Buff, ItemType.MagicDust, ItemType.Material, ItemType.SkillBook });
+                                    ItemType.Food, ItemType.Gem, ItemType.Material, ItemType.SkillBook });
 
         ItemShop itemShop;
         foreach (ItemData item in itemsData)

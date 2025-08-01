@@ -9,17 +9,52 @@ using UnityEditor;
 public class ItemDatabase : ScriptableObject
 {
     public List<ItemData> itemList;
-  
     public void FillUpDatabase()
     {
-        Dictionary<int, ItemData> itemDict = new();
         itemList.Clear(); 
-        FillUpGeneralData(itemDict); //fill common properties
-        FillUpEquipmentProperties(itemDict);
-        FillUpPotionProperties(itemDict);
-        FillUpSkillBookProperties(itemDict);
-        FillUpBuffProperties(itemDict);
-        FillUpMagicDustProperties(itemDict);
+        foreach(ItemType itemType in System.Enum.GetValues(typeof(ItemType) ) )
+        {
+            if (itemType == ItemType.None)
+                continue;
+            Debug.Log($"Fill up item data of type: {itemType}");
+            string dataText = Resources.Load<TextAsset>($"ItemDataBase\\{itemType}").text;
+            string[] lines = dataText.Split('\n');
+            string[][] cells = new string[lines.Length][];
+            for (int i=0; i<lines.Length; i++) 
+            {
+                cells[i] = lines[i].Split(new char[] { ',', '\r' });
+            }
+            Debug.Log($"Column count: {lines.Length}. Row count: {cells[0].Length}");
+            ItemData newItemData;
+            for(int i=1; i<lines.Length; i++)
+            {
+                try
+                {
+                    newItemData = new();
+                    newItemData.type = itemType;
+                    newItemData.id = (int)itemType * 1000 + int.Parse(cells[i][0]);
+                    newItemData.name = cells[i][1];
+                    newItemData.icon = Resources.Load<Sprite>($"ItemDataBase\\ItemIcons\\Item\\{cells[i][2]}");
+                    newItemData.level = int.Parse(cells[i][3]);
+                    newItemData.subType = int.Parse(cells[i][4]);
+                    newItemData.rarity = (ItemRarity)int.Parse(cells[i][5]);
+                    newItemData.description = cells[i][6];
+                    newItemData.maxSize = int.Parse(cells[i][7]);
+                    for(int j = 8; j < cells[0].Length; j++)
+                    {
+                        if (cells[i][j] != "0" && cells[i][j] != "")
+                        {
+                            newItemData.properties[cells[0][j]] = cells[i][j];
+                        }
+                    }
+                    itemList.Add(newItemData);
+                }
+                catch(System.Exception e)
+                {
+                    Debug.LogError($"Loi khi import database: {e}");
+                }
+            }
+        }    
 #if UNITY_EDITOR
         SaveAsset(this);
 #endif

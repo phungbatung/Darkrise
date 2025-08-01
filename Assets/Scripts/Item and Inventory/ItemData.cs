@@ -9,8 +9,8 @@ public enum ItemType
     Equipment=1,
     Potion=2,
     SkillBook=3,
-    Buff = 4,
-    MagicDust=5,
+    Food = 4,
+    Gem=5,
     Material=6
 }
 public enum ItemRarity
@@ -74,7 +74,6 @@ public class ItemData
         }
         throw new KeyNotFoundException($"Key '{key}' not found in dictionary.");
     }
-
     public bool TryGetProperty<T>(string key, out T value)
     {
         if (properties.TryGetValue(key, out string strValue))
@@ -95,5 +94,17 @@ public class ItemData
         return false;
     }
 
-    
+    private static ItemData _emptyItem = new ItemData()
+    {
+        id = -1,
+        name = string.Empty,
+        icon = default,
+        type = ItemType.None,
+        subType = 0,
+        rarity = ItemRarity.Common,
+        description = string.Empty,
+        maxSize = 0,
+        sellPrice = 0,
+    };
+    public static ItemData Empty { get => _emptyItem; }
 }

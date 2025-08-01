@@ -55,13 +55,13 @@ public class InventorySaveData
         {
             if(item == null) 
                 return new ItemInventory();
-            return new ItemInventory(ItemManager.Instance.itemDict[item.ItemId], item.Amount, item.EquipmentProperties);
+            return new ItemInventory(item.ItemId != -1? ItemManager.Instance.itemDict[item.ItemId] : null, item.Amount, item.EquipmentProperties);
         }
         public static implicit operator ItemInventorySave(ItemInventory item)
         {
             if (item == null) 
                 return new ItemInventory();
-            return new ItemInventorySave(item.itemData.id, item.amount, item.equipmentProperties);
+            return new ItemInventorySave(item.itemData != null?item.itemData.id : -1, item.amount, item.equipmentProperties);
         }
     }
 
@@ -98,14 +98,14 @@ public class InventorySaveData
         {
             if (props == null) 
                 return null;
-            return new EquipmentProperties(props.BaseProperties, props.Properties, props.UnlockedGemsSlot, props.Gems.Select(id => ItemManager.Instance.BuildInventoryItem(ItemManager.Instance.itemDict[id])).ToArray(), props.EnhanceLevel);
+            return new EquipmentProperties(props.BaseProperties, props.Properties, props.UnlockedGemsSlot, props.Gems.Select(id => ItemManager.Instance.itemDict[id]).ToArray(), props.EnhanceLevel);
         }
 
         public static implicit operator EquipmentPropertiesSave(EquipmentProperties props)
         {
             if (props == null)
                 return null;
-            return new EquipmentPropertiesSave(props.baseProperties, props.properties, props.unlockedGemsSlot, props.gems.Select(obj => obj.itemData.id).ToArray(), props.enhanceLevel);
+            return new EquipmentPropertiesSave(props.baseProperties, props.properties, props.unlockedGemsSlot, props.gems.Select(obj => obj.id).ToArray(), props.enhanceLevel);
         }
     }
 }

@@ -28,7 +28,7 @@ public class GemsSlot : MonoBehaviour
         {
             if(i<itemInventory.equipmentProperties.unlockedGemsSlot)
             {
-                gemsSlot[i].SetProperties(itemInventory.equipmentProperties.gems[i].itemData.id);
+                gemsSlot[i].SetProperties(itemInventory.equipmentProperties.gems[i].id);
                 gemsSlot[i].gameObject.SetActive(true);
             }
             else if (i == itemInventory.equipmentProperties.unlockedGemsSlot)
@@ -50,7 +50,7 @@ public class GemsSlot : MonoBehaviour
     }
     public void PutGemToSlot(int _slotIndex, ItemSlot itemSlot)
     {
-        if (itemSlot.itemInventory.itemData.type != ItemType.MagicDust)
+        if (itemSlot.itemInventory.itemData.type != ItemType.Gem)
             return;
         if (itemInventory.equipmentProperties.TryPutGemToSlot(_slotIndex, itemSlot.itemInventory))
         {

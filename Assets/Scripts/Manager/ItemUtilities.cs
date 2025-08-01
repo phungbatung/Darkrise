@@ -21,7 +21,7 @@ public class ItemUtilities
     public const string MANA_REGEN = "ManaRegen";
     public const string MOVE_SPEED = "MoveSpeed";
 
-    public const string COOLDOWN = "CoolDown";
+    public const string COOLDOWN = "Cooldown";
     public const string DURATION = "Duration";
 
     public const string HEALTH_BUFF = "HealthBuff";
