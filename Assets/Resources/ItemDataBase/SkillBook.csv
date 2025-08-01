@@ -1,0 +1,6 @@
+﻿Id,Name,Icon,Level require,SubType,Rarity,Description,Max size,SkillPoint
+1,Skill book rank 1,046,1,0,0,Skill book rank 1,99,1
+2,Skill book rank 2,043,1,0,1,Skill book rank 2,99,5
+3,Skill book rank 3,041,1,0,2,Skill book rank 3,99,25
+4,Skill book rank 4,042,1,0,3,Skill book rank 4,99,125
+5,Skill book rank 5,048,1,0,4,Skill book rank 5,99,625

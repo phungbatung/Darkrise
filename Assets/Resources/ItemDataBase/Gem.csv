@@ -1,0 +1,27 @@
+﻿Id,Name,Icon,Level require,SubType,Rarity,Description,Max size,Attack,AttackSpeed,ArmorPenetration,CriticalRate,CriticalDamage,Health,HealthRegen,Armor,Mana,ManaRegen,MoveSpeed
+1,Topaz,071,1,0,0,Topaz,99,5,0,0,0,0,0,0,0,0,0,0
+2,Topaz,071,1,0,1,Topaz,99,10,0,0,0,0,0,0,0,0,0,0
+3,Topaz,071,1,0,2,Topaz,99,20,0,0,0,0,0,0,0,0,0,0
+4,Topaz,071,1,0,3,Topaz,99,40,0,0,0,0,0,0,0,0,0,0
+5,Topaz,071,1,0,4,Topaz,99,50,0,0,0,0,0,0,0,0,0,0
+6,Ruby,069,1,0,0,Ruby,99,0,50,0,0,0,0,0,0,0,0,0
+7,Ruby,069,1,0,1,Ruby,99,0,100,0,0,0,0,0,0,0,0,0
+8,Ruby,069,1,0,2,Ruby,99,0,200,0,0,0,0,0,0,0,0,0
+9,Ruby,069,1,0,3,Ruby,99,0,400,0,0,0,0,0,0,0,0,0
+10,Ruby,069,1,0,4,Ruby,99,0,500,0,0,0,0,0,0,0,0,0
+11,Amethyst,073,1,0,0,Amethyst,99,0,0,5,0,0,0,0,0,0,0,0
+12,Amethyst,073,1,0,1,Amethyst,99,0,0,10,0,0,0,0,0,0,0,0
+13,Amethyst,073,1,0,2,Amethyst,99,0,0,20,0,0,0,0,0,0,0,0
+14,Amethyst,073,1,0,3,Amethyst,99,0,0,40,0,0,0,0,0,0,0,0
+15,Amethyst,073,1,0,4,Amethyst,99,0,0,50,0,0,0,0,0,0,0,0
+16,Diamond,070,1,0,0,Diamond,99,0,0,0,0,0,0,0,5,0,0,0
+17,Diamond,070,1,0,1,Diamond,99,0,0,0,0,0,0,0,10,0,0,0
+18,Diamond,070,1,0,2,Diamond,99,0,0,0,0,0,0,0,20,0,0,0
+19,Diamond,070,1,0,3,Diamond,99,0,0,0,0,0,0,0,40,0,0,0
+20,Diamond,070,1,0,4,Diamond,99,0,0,0,0,0,0,0,50,0,0,0
+21,Heliodor,072,1,0,0,Heliodor,99,0,0,0,1,0,0,0,0,0,0,0
+22,Heliodor,072,1,0,1,Heliodor,99,0,0,0,2,0,0,0,0,0,0,0
+23,Heliodor,072,1,0,2,Heliodor,99,0,0,0,3,0,0,0,0,0,0,0
+24,Heliodor,072,1,0,3,Heliodor,99,0,0,0,4,0,0,0,0,0,0,0
+25,Heliodor,072,1,0,4,Heliodor,99,0,0,0,5,0,0,0,0,0,0,0
+,,,,,,,,,,,,,,,,,,
