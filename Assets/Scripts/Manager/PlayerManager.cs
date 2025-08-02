@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour, ISaveManager
             Instance = this;
         else
             Destroy(gameObject);
+        //Instantiate(player);
     }
     public void LoadData(GameData gameData)
     {

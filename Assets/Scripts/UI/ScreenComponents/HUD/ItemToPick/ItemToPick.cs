@@ -28,8 +28,8 @@ public class ItemToPick : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        itemObject.PickUpItem();
-        Destroy(gameObject);
+        if(itemObject.PickUpItem())
+            Destroy(gameObject);
     }
 
 

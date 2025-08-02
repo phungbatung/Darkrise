@@ -21,7 +21,7 @@ public class AssetManager : MonoBehaviour
 
     public Sprite GetItemSlotBackGroundImageByKey(string key)
     {
-        //Debug.Log($"KeyBackground:{key}");
+        Debug.Log($"KeyBackground:{key}");
         foreach (var item in backgroundImages)
         {
             if (item.Key.Equals(key))

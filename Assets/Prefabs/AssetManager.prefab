@@ -74,12 +74,12 @@ MonoBehaviour:
   coinImages: []
   itemRarityColors:
   - Key: Common
-    Value: {r: 0.4792453, g: 0.4792453, b: 0.4792453, a: 0}
+    Value: {r: 0.4792453, g: 0.4792453, b: 0.4792453, a: 1}
   - Key: Uncommon
-    Value: {r: 0.37050927, g: 0.5622641, b: 0, a: 0}
+    Value: {r: 0.23421079, g: 0.87169814, b: 0.07072261, a: 1}
   - Key: Rare
-    Value: {r: 0.006728347, g: 0.14382987, b: 0.509434, a: 0}
+    Value: {r: 0, g: 0.098440886, b: 1, a: 1}
   - Key: Epic
-    Value: {r: 0.3250234, g: 0.0024136354, b: 0.4264151, a: 0}
+    Value: {r: 0.44705883, g: 0, b: 1, a: 1}
   - Key: Legend
-    Value: {r: 0.4867924, g: 0, b: 0, a: 0}
+    Value: {r: 0.7132075, g: 0, b: 0, a: 1}

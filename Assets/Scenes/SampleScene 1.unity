@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 723956786}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 8
@@ -3538,11 +3538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169db0e876aaeef48b9dd26453328a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &723956786 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7604330270933113728, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
-  m_PrefabInstance: {fileID: 2041205031558345533}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &733690536
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,10 +7694,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2504892979062946398, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
-      propertyPath: groundCheckDistance
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 3416888644622896349, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7747,14 +7738,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8139729017172577376, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
-      propertyPath: buffViewPrefab
-      value: 
-      objectReference: {fileID: 5861302750931790372, guid: f786567830712874fa0d1869b18f43c2, type: 3}
-    - target: {fileID: 8139729017172577376, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
-      propertyPath: buffPresenterPrefab
-      value: 
-      objectReference: {fileID: 8045003863915616853, guid: 2518ffc74ad6e63408256ae449b12d4f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
