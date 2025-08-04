@@ -10,6 +10,7 @@ public class EquipmentForGemWorkSlot : MonoBehaviour, IPointerDownHandler, IDrop
 {
 
     [SerializeField] private Image icon;
+    [SerializeField] private Image bg;
     [SerializeField] private TextMeshProUGUI equipmentName;
     [SerializeField] private TextMeshProUGUI level;
 
@@ -19,7 +20,7 @@ public class EquipmentForGemWorkSlot : MonoBehaviour, IPointerDownHandler, IDrop
     {
         ItemSlot slot = eventData.pointerDrag.GetComponent<ItemSlot>();
         ItemData itemData = slot.itemInventory.itemData;
-        if (itemData.type != ItemType.Equipment)
+        if (itemData.Type != ItemType.Equipment)
             return;
         SetItem(itemData);
         OnDropAction?.Invoke(slot.itemInventory);
@@ -35,14 +36,16 @@ public class EquipmentForGemWorkSlot : MonoBehaviour, IPointerDownHandler, IDrop
     {
         icon.sprite = null;
         icon.color = new Color(1, 1, 1, 0);
+        bg.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(ItemRarity.Common.ToString());
         equipmentName.text = "";
         level.text = "";
     }
     public void SetItem(ItemData itemData)
     {
-        icon.sprite = itemData.icon;
+        icon.sprite = itemData.Icon;
         icon.color = new Color(1, 1, 1, 1);
-        equipmentName.text = itemData.name;
-        level.text = $"Lv: {itemData.level}";
+        bg.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(itemData.Rarity.ToString());
+        equipmentName.text = itemData.Name;
+        level.text = $"Lv: {itemData.Level}";
     }    
 }

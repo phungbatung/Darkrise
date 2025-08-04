@@ -1639,7 +1639,19 @@ MonoBehaviour:
   sortButton: {fileID: 8323887948049230632}
   sortDropdown: {fileID: 8726680454738658999}
   onWorkItem:
-    itemId: -1
+    itemData:
+      id: 0
+      name: 
+      icon: {fileID: 0}
+      level: 0
+      type: 0
+      subType: 0
+      rarity: 0
+      description: 
+      maxSize: 0
+      sellPrice: 0
+      properties:
+        dictList: []
     amount: 0
 --- !u!1 &3346535984540758768
 GameObject:
@@ -2216,7 +2228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a3e5ef1d80542f48833591e5e8814f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 380cbb2cc2e72a04fbb7013072d6c1e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2239,6 +2251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 3631018362586514965}
+  bg: {fileID: 5739435054307329621}
   equipmentName: {fileID: 2492494677325869956}
   level: {fileID: 3178795212582534661}
 --- !u!1 &4156760175364867592
@@ -2501,6 +2514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 6248641505475935767}
+  bg: {fileID: 8740194342455372912}
   itemProperties: {fileID: 7867009095166905460}
   lockedSprite: {fileID: 21300000, guid: 0fc8a4343778a3e4987a6b503c8f5d03, type: 3}
 --- !u!1 &4262234448278144816
@@ -3975,7 +3989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2157697836874036709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4281,6 +4295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 4466504581103979200}
+  bg: {fileID: 679342480475099934}
   itemProperties: {fileID: 4352633251071514602}
   lockedSprite: {fileID: 21300000, guid: 0fc8a4343778a3e4987a6b503c8f5d03, type: 3}
 --- !u!1 &8759712426024399120
@@ -4468,6 +4483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 2082532742520059846}
+  bg: {fileID: 2881806684739055352}
   itemProperties: {fileID: 3610880600741857298}
   lockedSprite: {fileID: 21300000, guid: 0fc8a4343778a3e4987a6b503c8f5d03, type: 3}
 --- !u!1 &8934571041111655987

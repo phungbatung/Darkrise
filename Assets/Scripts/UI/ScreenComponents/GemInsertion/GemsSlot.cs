@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class GemsSlot : MonoBehaviour
 {
+    private GemInsertionScreen screen;
     private ItemInventory itemInventory;
     private GemSlot[] gemsSlot;
     private void Awake()
     {
         InitGemsSlot();
+        screen = GetComponentInParent<GemInsertionScreen>();
     }
     private void InitGemsSlot()
     {
@@ -28,7 +30,8 @@ public class GemsSlot : MonoBehaviour
         {
             if(i<itemInventory.equipmentProperties.unlockedGemsSlot)
             {
-                gemsSlot[i].SetProperties(itemInventory.equipmentProperties.gems[i].id);
+                //Debug.Log($"{itemInventory.equipmentProperties.gems[i] == ItemData.Empty}, {itemInventory.equipmentProperties.gems[i].Id}");
+                gemsSlot[i].SetProperties(itemInventory.equipmentProperties.gems[i]);
                 gemsSlot[i].gameObject.SetActive(true);
             }
             else if (i == itemInventory.equipmentProperties.unlockedGemsSlot)
@@ -50,11 +53,11 @@ public class GemsSlot : MonoBehaviour
     }
     public void PutGemToSlot(int _slotIndex, ItemSlot itemSlot)
     {
-        if (itemSlot.itemInventory.itemData.type != ItemType.Gem)
+        if (itemSlot.itemInventory.itemData.Type != ItemType.Gem)
             return;
         if (itemInventory.equipmentProperties.TryPutGemToSlot(_slotIndex, itemSlot.itemInventory))
         {
-            gemsSlot[_slotIndex].SetProperties(itemSlot.itemInventory.itemData.id);
+            gemsSlot[_slotIndex].SetProperties(itemSlot.itemInventory.itemData);
             itemSlot.UpdateUI();
             SetupGemsSlot(itemInventory);
         }
@@ -69,6 +72,7 @@ public class GemsSlot : MonoBehaviour
         if (itemInventory.equipmentProperties.TryRemoveGemFromSlot(_slot))
         {
             SetupGemsSlot(itemInventory);
+            screen.UpdateInventory();
         }    
     }    
 }

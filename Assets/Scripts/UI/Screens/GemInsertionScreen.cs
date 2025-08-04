@@ -53,5 +53,10 @@ public class GemInsertionScreen : BlitzyUI.Screen
         inventoryUI.RemoveOnWorkItem();
         guideText.gameObject.SetActive(true);
         gemsSlot.gameObject.SetActive(false);
-    }    
+    }
+    
+    public void UpdateInventory()
+    {
+        inventoryUI.UpdateItemSlot();
+    }
 }

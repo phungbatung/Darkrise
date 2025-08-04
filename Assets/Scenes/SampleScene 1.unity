@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 14034474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.747787, y: 5.8352327, z: -10.198298}
+  m_LocalPosition: {x: 10.247788, y: 3.2352328, z: -10.198298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 996063187}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 8
@@ -2297,7 +2297,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.747787, y: 5.8352327, z: -10.198298}
+  m_LocalPosition: {x: 10.247788, y: 3.2352328, z: -10.198298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4283,6 +4283,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &996063187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7604330270933113728, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
+  m_PrefabInstance: {fileID: 2041205031558345533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1000147638
 GameObject:
   m_ObjectHideFlags: 0
@@ -7408,24 +7413,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
-      propertyPath: itemRarityColors.Array.data[0].Value.a
+      propertyPath: itemRarityColors.Array.data[2].Value.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
-      propertyPath: itemRarityColors.Array.data[1].Value.a
-      value: 1
+      propertyPath: itemRarityColors.Array.data[2].Value.g
+      value: 0.39072332
       objectReference: {fileID: 0}
     - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
-      propertyPath: itemRarityColors.Array.data[2].Value.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
-      propertyPath: itemRarityColors.Array.data[3].Value.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6633693145057877747, guid: e69f5eb1b22556e49be59d39e376260a, type: 3}
-      propertyPath: itemRarityColors.Array.data[4].Value.a
-      value: 1
+      propertyPath: itemRarityColors.Array.data[2].Value.r
+      value: 0.2396226
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7698,13 +7695,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3416888644622896349, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7604330270933113728, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7604330270933113728, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7604330270933113728, guid: 32db53223222c184a8831fa1d6b9722d, type: 3}
       propertyPath: m_LocalPosition.z

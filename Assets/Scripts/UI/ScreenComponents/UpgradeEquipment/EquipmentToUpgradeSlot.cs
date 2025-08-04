@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class EquipmentToUpgradeSlot : MonoBehaviour, IDropHandler, IPointerDownHandler
 {
+    
+    [SerializeField] private Image bg;
     [SerializeField] private Image icon;
     [SerializeField] private TextMeshProUGUI enhanceLevel;
     [SerializeField] private TextMeshProUGUI equipmentName;
@@ -19,7 +21,7 @@ public class EquipmentToUpgradeSlot : MonoBehaviour, IDropHandler, IPointerDownH
     {
         ItemSlot slot = eventData.pointerDrag.GetComponent<ItemSlot>();
         ItemData itemData = slot.itemInventory.itemData;
-        if (itemData.type != ItemType.Equipment)
+        if (itemData.Type != ItemType.Equipment)
             return;
         SetItem(slot.itemInventory);
         OnDropAction?.Invoke(slot.itemInventory);
@@ -33,6 +35,7 @@ public class EquipmentToUpgradeSlot : MonoBehaviour, IDropHandler, IPointerDownH
 
     public void SetEmtyItem()
     {
+        bg.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(ItemRarity.Common.ToString());
         icon.sprite = null;
         icon.color = new Color(1, 1, 1, 0);
         equipmentName.text = "";
@@ -41,10 +44,11 @@ public class EquipmentToUpgradeSlot : MonoBehaviour, IDropHandler, IPointerDownH
     public void SetItem(ItemInventory _itemInventory)
     {
         ItemData itemData = _itemInventory.itemData;
-        icon.sprite = itemData.icon;
+        bg.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(itemData.Rarity.ToString());
+        icon.sprite = itemData.Icon;
         enhanceLevel.text = _itemInventory.equipmentProperties.enhanceLevel < 1 ? "" : $"+{_itemInventory.equipmentProperties.enhanceLevel}";
         icon.color = new Color(1, 1, 1, 1);
-        equipmentName.text = itemData.name;
-        level.text = $"Lv: {itemData.level}";
+        equipmentName.text = itemData.Name;
+        level.text = $"Lv: {itemData.Level}";
     }
 }

@@ -13,6 +13,7 @@ public class GemSlot : MonoBehaviour, IDropHandler, IPointerDownHandler
 
     [Header("Component")]
     [SerializeField] private Image itemIcon;
+    [SerializeField] private Image bg;
     [SerializeField] private TextMeshProUGUI itemProperties;
 
     [Header("Locked sprite")]
@@ -27,20 +28,21 @@ public class GemSlot : MonoBehaviour, IDropHandler, IPointerDownHandler
         itemIcon.sprite = lockedSprite;
         itemProperties.text = $"Unlock for {_price} gold";
     }
-    public void SetProperties(int gemId)
+    public void SetProperties(ItemData itemData)
     {
-        if(gemId == -1)
+        if(itemData == ItemData.Empty)
         {
             itemIcon.color = new Color(1, 1, 1, 0);
             itemIcon.sprite = null;
+            bg.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(ItemRarity.Common.ToString());
             itemProperties.text = "Gem socket";
             return;
         }
-        ItemData item = ItemManager.Instance.itemDict[gemId];
-        itemIcon.sprite = item.icon;
+        itemIcon.sprite = itemData.Icon;
         itemIcon.color = new Color(1, 1, 1, 1);
+        bg.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(itemData.Rarity.ToString());
         string properties = "";
-        foreach(var property in  item.properties)
+        foreach(var property in  itemData.Properties)
         {
             properties += $"+{property.Value} {property.Key}\n";
         }

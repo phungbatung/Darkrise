@@ -33,7 +33,7 @@ public class RandomShopScreen : BlitzyUI.Screen
         foreach (ItemData item in itemsData)
         {
             ItemInventory itemInventory = ItemManager.Instance.BuildInventoryItem(item);
-            KeyValuePair<CurrencyType, int> price = new KeyValuePair<CurrencyType, int>(CurrencyType.Gold, item.sellPrice * 2);
+            KeyValuePair<CurrencyType, int> price = new KeyValuePair<CurrencyType, int>(CurrencyType.Gold, item.SellPrice * 2);
             itemShop = new ItemShop(itemInventory, price);
             Instantiate(itemShopTemplate, listItemParent).SetItem(itemShop);
         }
