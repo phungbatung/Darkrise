@@ -17,7 +17,7 @@ public class ItemInfoScreen : BlitzyUI.Screen
     [SerializeField] private TextMeshProUGUI itemLevel;
     [SerializeField] private TextMeshProUGUI itemDescription;
 
-    private RectTransform rect;
+    [SerializeField] private RectTransform rect;
     [SerializeField] private RectTransform content;
     [SerializeField] private float maxHeight;
 
@@ -33,13 +33,18 @@ public class ItemInfoScreen : BlitzyUI.Screen
         itemInventory = _itemInventory;
         ItemData item = _itemInventory.itemData;
         //Base info
-        itemIcon.sprite = item.icon;
-        itemName.text = item.name;
-        itemType.text = item.type.ToString();
-        itemQuality.text = item.rarity.ToString();
+        itemIcon.sprite = item.Icon;
+        itemName.text = item.Name;
+        itemName.color = AssetManager.Instance.GetColorRarityByKey(item.Rarity.ToString());
+        itemType.text = item.Type.ToString();
+        itemType.color = AssetManager.Instance.GetColorRarityByKey(item.Rarity.ToString());
+        itemQuality.text = item.Rarity.ToString();
+        itemQuality.color = AssetManager.Instance.GetColorRarityByKey(item.Rarity.ToString());
+        itemLevel.text = $"Level: {item.Level}";
+        itemLevel.color = AssetManager.Instance.GetColorRarityByKey(item.Rarity.ToString());
         //Properties, description
         string description = "";
-        if (item.type == ItemType.Equipment)
+        if (item.Type == ItemType.Equipment)
         {
             string baseStat = ItemUtilities.GetBaseStatOfEquipment(item);
             Dictionary<string, string> _properties = itemInventory.equipmentProperties.GetBaseProperties();
@@ -66,18 +71,18 @@ public class ItemInfoScreen : BlitzyUI.Screen
                 if(itemInventory.equipmentProperties.gems[i]== ItemData.Empty)
                 {
                     ItemData gem = itemInventory.equipmentProperties.gems[i];
-                    description += gem.name +"\n";
-                    foreach (var _property in gem.properties)
+                    description += gem.Name +"\n";
+                    foreach (var _property in gem.Properties)
                     {
                         description += $"+{_property.Value} {_property.Key}\n";
                     }
                 }
             }   
         }
-        else if (item.type == ItemType.Potion)
+        else if (item.Type == ItemType.Potion)
         {
             description += $"Instantly restores ";
-            foreach(var _property in item.properties)
+            foreach(var _property in item.Properties)
             {
                 if (_property.Key == ItemUtilities.COOLDOWN)
                     continue;
@@ -87,37 +92,37 @@ public class ItemInfoScreen : BlitzyUI.Screen
                 }
                 description += $"{_property.Value} {_property.Key}";
             }
-            description += $"\nCooldown: {item.properties[ItemUtilities.COOLDOWN]}s\n";
-            description += $"Level required: {item.level}\n";
+            description += $"\nCooldown: {item.Properties[ItemUtilities.COOLDOWN]}s\n";
+            description += $"Level required: {item.Level}\n";
         }
-        else if (item.type == ItemType.Food)
+        else if (item.Type == ItemType.Food)
         {
             description += $"Effect:\n";
-            foreach (var _property in item.properties)
+            foreach (var _property in item.Properties)
             {
                 if (_property.Key == ItemUtilities.DURATION)
                     continue;
                 description += $"+{_property.Value} {_property.Key}\n";
             }
-            description += $"Duration: {item.properties[ItemUtilities.DURATION]}s\n";
-            description += $"\n{item.description}\n";
+            description += $"Duration: {item.Properties[ItemUtilities.DURATION]}s\n";
+            description += $"\n{item.Description}\n";
         }
-        else if (item.type == ItemType.SkillBook)
+        else if (item.Type == ItemType.SkillBook)
         {
-            description += $"Effect: Active skill points +{item.properties[ItemUtilities.SKILL_POINT]}\n";
-            description += $"\n{item.description}\n";
+            description += $"Effect: Active skill points +{item.Properties[ItemUtilities.SKILL_POINT]}\n";
+            description += $"\n{item.Description}\n";
         }
-        else if (item.type == ItemType.Gem)
+        else if (item.Type == ItemType.Gem)
         {
             description += $"Effect:\n";
-            foreach (var _property in item.properties)
+            foreach (var _property in item.Properties)
             {
                 description += $"+{_property.Value} {_property.Key}\n";
             }
-            description += $"\n{item.description}\n";
+            description += $"\n{item.Description}\n";
         }
         else
-            description = $"{item.description}\n";
+            description = $"{item.Description}\n";
         itemDescription.text = description;
         //
         CheckForActiveButton(item);
@@ -137,7 +142,7 @@ public class ItemInfoScreen : BlitzyUI.Screen
 
     private void CheckForActiveButton(ItemData item)
     {
-        ItemType type = item.type;
+        ItemType type = item.Type;
         foreach(var button in buttonList)
         {
             if (button.CanBeActive(type))
@@ -158,7 +163,11 @@ public class ItemInfoScreen : BlitzyUI.Screen
             yield return null;
             float height = maxHeight;
             if (content.sizeDelta.y < height)
+            {
                 height = content.sizeDelta.y;
+                Debug.Log("active");
+            }
+            //Debug.Log(height);
             rect.sizeDelta = new Vector2(rect.sizeDelta.x, height);
         }
         this.StartCoroutine(Routine());
@@ -202,7 +211,7 @@ public class ItemInfoScreen : BlitzyUI.Screen
 
     public override void OnSetup()
     {
-        rect = GetComponent<RectTransform>();
+        //rect = GetComponent<RectTransform>();
         buttonList = content.GetComponentsInChildren<BtnBaseItemInfo>().ToList();
     }
 
