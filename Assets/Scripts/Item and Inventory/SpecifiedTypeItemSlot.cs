@@ -11,7 +11,7 @@ public class SpecifiedTypeItemSlot : ItemSlot
     public override void OnDrop(PointerEventData eventData)
     {
         ItemSlot toDropSlot = eventData.pointerDrag.GetComponent<ItemSlot>();
-        if (toDropSlot.itemInventory.itemData.type != typeSpecified)
+        if (toDropSlot.itemInventory.itemData.Type != typeSpecified)
             return;
         ItemManager inventory = ItemManager.Instance;
 
@@ -22,10 +22,10 @@ public class SpecifiedTypeItemSlot : ItemSlot
             if (inventory.equipedItems.Contains(toDropSlot.itemInventory))
                 return;
             //Cannot drop non-equipment to equipment slot
-            if (toDropSlot.itemInventory.itemData.type != ItemType.Equipment)
+            if (toDropSlot.itemInventory.itemData.Type != ItemType.Equipment)
                 return;
             //Cannot drop equipment of different type in this equipment slot
-            if (inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.id) != inventory.equipedItems.IndexOf(itemInventory))
+            if (inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.Id) != inventory.equipedItems.IndexOf(itemInventory))
                 return;
             //Equip
             inventory.EquipItem(toDropSlot.itemInventory);
@@ -43,10 +43,10 @@ public class SpecifiedTypeItemSlot : ItemSlot
                 return;
             }
             //Cannot swap item from equipment slot to none equipment
-            if (itemInventory.itemData.type != ItemType.Equipment)
+            if (itemInventory.itemData.Type != ItemType.Equipment)
                 return;
             //Cannot swap item from equipment slot to another equipment of different type
-            if (inventory.GetEquipmentTypeById(itemInventory.itemData.id) != inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.id))
+            if (inventory.GetEquipmentTypeById(itemInventory.itemData.Id) != inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.Id))
                 return;
             //Equip this item if it is equipment of the same type
             inventory.EquipItem(itemInventory);

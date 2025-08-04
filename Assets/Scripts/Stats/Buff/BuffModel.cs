@@ -39,10 +39,10 @@ public class BuffModel
 
     public void StartBuff()
     {
-        characterStats.AddModifier(ItemManager.Instance.itemDict[itemId].properties);
+        characterStats.AddModifier(ItemManager.Instance.itemDict[itemId].Properties);
     }
     public void EndBuff()
     {
-        characterStats.RemoveModifier(ItemManager.Instance.itemDict[itemId].properties);
+        characterStats.RemoveModifier(ItemManager.Instance.itemDict[itemId].Properties);
     }
 }

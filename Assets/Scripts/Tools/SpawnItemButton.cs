@@ -35,7 +35,7 @@ public class SpawnItemButton : MonoBehaviour
         List<ItemData> items = new();
         foreach(ItemData item in ItemManager.Instance.itemDatabase.itemList)
         {
-            if (item.type == itemType)
+            if (item.Type == itemType)
                 items.Add(item);
         }
         if (items.Count <= 0)

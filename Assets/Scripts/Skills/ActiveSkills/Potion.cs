@@ -28,7 +28,7 @@ public class Potion : MonoBehaviour
             if (cooldownTimer <= 0)
                 isCooldownCompleted = true;
         }
-        if(itemInventory!=null && ItemManager.Instance!=null && itemInventory.itemData.type!=ItemType.Potion)
+        if(itemInventory!=null && ItemManager.Instance!=null && itemInventory.itemData.Type!=ItemType.Potion)
         {
             UnassignPotion();
         }
@@ -37,9 +37,9 @@ public class Potion : MonoBehaviour
     }
     public void Consume()
     {
-        TryConsumePotion(itemInventory);
-        if (itemInventory.amount <= 0)
-            UnassignPotion();
+        if(TryConsumePotion(itemInventory))
+            if (itemInventory.amount <= 0)
+                UnassignPotion();
     }
     public bool TryConsumePotion(ItemInventory _item)
     {
@@ -48,7 +48,7 @@ public class Potion : MonoBehaviour
         if (_item == null)
             return false;
         ItemData itemData = _item.itemData;
-        if (itemData.type != ItemType.Potion)
+        if (itemData.Type != ItemType.Potion)
             return false;
 
         if (itemData.TryGetProperty(ItemUtilities.HEALTH, out int _health))

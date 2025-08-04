@@ -19,8 +19,8 @@ public class ItemObject : MonoBehaviour
     public void SetUpItem(ItemData itemData, Vector3 _dropPosition)
     {
         item = ItemManager.Instance.BuildInventoryItem(itemData);
-        icon.sprite = itemData.icon;
-        bg.color = AssetManager.Instance.GetColorRarityByKey(itemData.rarity.ToString());
+        icon.sprite = itemData.Icon;
+        bg.color = AssetManager.Instance.GetColorRarityByKey(itemData.Rarity.ToString());
         transform.position = _dropPosition;
         rb.velocity = new Vector2(UnityEngine.Random.Range(-5.0f, 5.0f), 5);
     }

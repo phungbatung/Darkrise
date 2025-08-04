@@ -46,22 +46,42 @@ public enum BuffType
 public class ItemData
 {
 
-    public int id;
-    public string name;
-    public Sprite icon;
-    public int level;
-    public ItemType type;
-    public int subType;
-    public ItemRarity rarity;
-    public string description;
-    public int maxSize;
-    public int sellPrice;
-    public SerializableDictionary<string, string> properties = new SerializableDictionary<string, string>();
-    public EquipmentType EquipmentType => (EquipmentType)subType;
-    public BuffType BuffType => (BuffType)subType;
+    public int Id;
+    public string Name;
+    public Sprite Icon;
+    public int Level;
+    public ItemType Type;
+    public int SubType;
+    public ItemRarity Rarity;
+    public string Description;
+    public int MaxSize;
+    public int SellPrice;
+    public SerializableDictionary<string, string> Properties = new SerializableDictionary<string, string>();
+
+    public ItemData()
+    {
+
+    }
+    public ItemData(int id, string name, Sprite icon, int level, ItemType type, int subType, ItemRarity rarity, string description, int maxSize, int sellPrice, SerializableDictionary<string, string> properties)
+    {
+        Id = id;
+        Name = name;
+        Icon = icon;
+        Level = level;
+        Type = type;
+        SubType = subType;
+        Rarity = rarity;
+        Description = description;
+        MaxSize = maxSize;
+        SellPrice = sellPrice;
+        Properties = properties;
+    }
+
+    public EquipmentType EquipmentType => (EquipmentType)SubType;
+    public BuffType BuffType => (BuffType)SubType;
     public T GetProperty<T>(string key)
     {
-        if (properties.TryGetValue(key, out string value))
+        if (Properties.TryGetValue(key, out string value))
         {
             try
             {
@@ -76,7 +96,7 @@ public class ItemData
     }
     public bool TryGetProperty<T>(string key, out T value)
     {
-        if (properties.TryGetValue(key, out string strValue))
+        if (Properties.TryGetValue(key, out string strValue))
         {
             try
             {
@@ -94,17 +114,26 @@ public class ItemData
         return false;
     }
 
-    private static ItemData _emptyItem = new ItemData()
+    private static readonly ItemData _emptyItem = new ItemData(
+        -1,
+        string.Empty,
+        default,
+        0,
+        ItemType.None,
+        0,
+        ItemRarity.Common,
+        string.Empty,
+        0,
+        0,
+        new SerializableDictionary<string, string>()
+    );
+    
+
+    public static ItemData Empty
     {
-        id = -1,
-        name = string.Empty,
-        icon = default,
-        type = ItemType.None,
-        subType = 0,
-        rarity = ItemRarity.Common,
-        description = string.Empty,
-        maxSize = 0,
-        sellPrice = 0,
-    };
-    public static ItemData Empty { get => _emptyItem; }
+        get
+        {
+            return _emptyItem;
+        }
+    }
 }

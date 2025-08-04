@@ -55,13 +55,13 @@ public class PotionSlot : MonoBehaviour, IPointerDownHandler
         }
 
         ItemData item = potion.itemInventory.itemData;
-        if (item.type != ItemType.Potion)
+        if (item.Type != ItemType.Potion)
         {
             image.sprite = null;
             amount.text = "";
             return;
         }
-        image.sprite = item.icon;
+        image.sprite = item.Icon;
         amount.text = potion.itemInventory.amount.ToString();
     }
 

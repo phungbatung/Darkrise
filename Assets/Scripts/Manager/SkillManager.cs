@@ -55,7 +55,7 @@ public class SkillManager : MonoBehaviour, ISaveManager
     {
         skillPoint += _point;
         OnSkillPointChange?.Invoke();
-        Debug.Log(skillPoint);
+        //Debug.Log(skillPoint);
     }
     public bool RemoveSkillPoint(int _point)
     {

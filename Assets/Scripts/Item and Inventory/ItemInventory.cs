@@ -45,17 +45,17 @@ public class ItemInventory
     {
         amount -= _amount;
         if (amount <= 0)
-            itemData = null;
+            itemData = ItemData.Empty;
         if (amount <= 0)
         {
-            itemData = null;
+            itemData = ItemData.Empty;
             equipmentProperties = null;
         }
     }
     public void RemoveAll()
     {
         amount = 0;
-        itemData = null;
+        itemData = ItemData.Empty;
         equipmentProperties = null;
     }
     public bool IsEmpty()
@@ -64,7 +64,7 @@ public class ItemInventory
     }
     public bool CanBeAdded(ItemData _itemId, int _addAmount = 1)
     {
-        return itemData == _itemId && amount + _addAmount <= itemData.maxSize;
+        return itemData == _itemId && amount + _addAmount <= itemData.MaxSize;
     }
 
     public static void Swap(ref ItemInventory item1, ref ItemInventory item2)
@@ -100,10 +100,10 @@ public class ItemInventory
         if (itemInventory1.IsEmpty() && itemInventory2.IsEmpty()) return 0;
         ItemData item1 = itemInventory1.itemData;
         ItemData item2 = itemInventory2.itemData;
-        if (item1.type > item2.type) return 1;
-        if (item1.type < item2.type) return -1;
-        if (item1.rarity < item2.rarity) return 1;
-        if (item1.rarity > item2.rarity) return -1;
+        if (item1.Type > item2.Type) return 1;
+        if (item1.Type < item2.Type) return -1;
+        if (item1.Rarity < item2.Rarity) return 1;
+        if (item1.Rarity > item2.Rarity) return -1;
         return 0;
     }
     public static int CompareByItemQuality(ItemInventory itemInventory1, ItemInventory itemInventory2)
@@ -113,10 +113,10 @@ public class ItemInventory
         if (itemInventory1.IsEmpty() && itemInventory2.IsEmpty()) return 0;
         ItemData item1 = itemInventory1.itemData;
         ItemData item2 = itemInventory2.itemData;
-        if (item1.rarity < item2.rarity) return 1;
-        if (item1.rarity > item2.rarity) return -1;
-        if (item1.type > item2.type) return 1;
-        if (item1.type < item2.type) return -1;
+        if (item1.Rarity < item2.Rarity) return 1;
+        if (item1.Rarity > item2.Rarity) return -1;
+        if (item1.Type > item2.Type) return 1;
+        if (item1.Type < item2.Type) return -1;
         return 0;
     }
 }

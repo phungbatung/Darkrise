@@ -156,14 +156,14 @@ public class ItemManager : MonoBehaviour, ISaveManager
 
     public List<ItemData> GetAllItemOfType(ItemType type)
     {
-        return itemDatabase.itemList.Where(item => item.type == type).ToList();
+        return itemDatabase.itemList.Where(item => item.Type == type).ToList();
     }
 
     public List<ItemData> GetAllItemOfType(ItemType[] types)
     {
         var typeSet = new HashSet<ItemType>(types);
         return itemDatabase.itemList
-                          .Where(item => typeSet.Contains(item.type))
+                          .Where(item => typeSet.Contains(item.Type))
                           .ToList();
     }
 
@@ -171,20 +171,20 @@ public class ItemManager : MonoBehaviour, ISaveManager
     {
         var typeSet = new HashSet<ItemType>(types);
         return itemDatabase.itemList
-                          .Where(item => typeSet.Contains(item.type))
+                          .Where(item => typeSet.Contains(item.Type))
                           .ToList();
     }
 
     public ItemInventory BuildInventoryItem(ItemData itemData)
     {
         ItemInventory _itemInventory = new ItemInventory();
-        if (itemData.type == ItemType.Equipment)
+        if (itemData.Type == ItemType.Equipment)
         {
             Dictionary<string, string> properties = new Dictionary<string, string>();
-            for (int i = 1; i <= itemData.rarity.GetHashCode(); i++)
+            for (int i = 1; i <= itemData.Rarity.GetHashCode(); i++)
             {
-                int idx = UnityEngine.Random.Range(0, itemData.properties.Count);
-                var kvp = itemData.properties.ElementAt(idx);
+                int idx = UnityEngine.Random.Range(0, itemData.Properties.Count);
+                var kvp = itemData.Properties.ElementAt(idx);
                 if (properties.ContainsKey(kvp.Key))
                 {
                     properties[kvp.Key] += $",{(int)UnityEngine.Random.Range(float.Parse(kvp.Value) * .7f, float.Parse(kvp.Value) * 1.3f)}";
@@ -207,7 +207,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
     {
         if (_itemToEquip == null || _itemToEquip.IsEmpty())
             return;
-        if (_itemToEquip.itemData.type != ItemType.Equipment)
+        if (_itemToEquip.itemData.Type != ItemType.Equipment)
             return;
 
         ItemInventory _itemToUnequip = null;
@@ -220,7 +220,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
 
     public void UnequipItem(ItemInventory _itemToUnequip, ItemInventory _slotToGiveBack = null )
     {
-        if (_itemToUnequip.itemData.type != ItemType.Equipment && !equipedItems.Contains(_itemToUnequip))
+        if (_itemToUnequip.itemData.Type != ItemType.Equipment && !equipedItems.Contains(_itemToUnequip))
             return;
 
         //Find first emptys
@@ -252,7 +252,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Potion
     public void UsePotion(ItemInventory _item)
     {
-        if (_item.itemData.type != ItemType.Potion)
+        if (_item.itemData.Type != ItemType.Potion)
             return;
         SkillManager.Instance.potion.TryConsumePotion(_item);
     }
@@ -265,7 +265,7 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Buff
     public void UseBuff(ItemInventory _item)
     {
-        if (_item.itemData.type != ItemType.Food)
+        if (_item.itemData.Type != ItemType.Food)
             return;
         PlayerManager.Instance.player.stats.BuffManager.StartBuff(_item.itemData);
         _item.RemoveItem();
@@ -275,9 +275,9 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Skill book
     public void UseSkillBook(ItemInventory _item)
     {
-        if (_item.itemData.type != ItemType.SkillBook)
+        if (_item.itemData.Type != ItemType.SkillBook)
             return;
-        int point = int.Parse(_item.itemData.properties[ItemUtilities.SKILL_POINT]);
+        int point = int.Parse(_item.itemData.Properties[ItemUtilities.SKILL_POINT]);
         SkillManager.Instance.AddSkillPoint(point);
         _item.RemoveItem();
     }    
@@ -328,10 +328,11 @@ public class ItemManager : MonoBehaviour, ISaveManager
     #region Item database
     public void GenerateItemDataDictionary()
     {
-        itemDict[ItemData.Empty.id] = ItemData.Empty;
+        Debug.Log(ItemData.Empty.Id);
+        itemDict[ItemData.Empty.Id] = ItemData.Empty;
         foreach (ItemData item in itemDatabase.itemList)
         {
-            itemDict[item.id] = item;
+            itemDict[item.Id] = item;
         }
     }
 

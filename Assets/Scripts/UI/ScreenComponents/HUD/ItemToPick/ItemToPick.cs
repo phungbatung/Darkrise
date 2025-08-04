@@ -22,9 +22,9 @@ public class ItemToPick : MonoBehaviour, IPointerClickHandler
     {
         gameObject.SetActive(true);
         itemObject = _itemObject;
-        itemIcon.sprite = itemObject.item.itemData.icon;
-        itemName.text = itemObject.item.itemData.name;
-        itemName.color = AssetManager.Instance.GetColorRarityByKey(itemObject.item.itemData.rarity.ToString());
+        itemIcon.sprite = itemObject.item.itemData.Icon;
+        itemName.text = itemObject.item.itemData.Name;
+        itemName.color = AssetManager.Instance.GetColorRarityByKey(itemObject.item.itemData.Rarity.ToString());
     }
     public void OnPointerClick(PointerEventData eventData)
     {

@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour, ISaveManager
             Instance = this;
         else
             Destroy(gameObject);
+        player.gameObject.SetActive(true);
         //Instantiate(player);
     }
     public void LoadData(GameData gameData)

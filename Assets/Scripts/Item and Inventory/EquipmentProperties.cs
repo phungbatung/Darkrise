@@ -64,7 +64,7 @@ public class EquipmentProperties
             if (gems[i] == ItemData.Empty)
                 continue;
             ItemData item = gems[i];
-            foreach (KeyValuePair<string, string> kvp in item.properties)
+            foreach (KeyValuePair<string, string> kvp in item.Properties)
             {
                 
                 if (_properties.ContainsKey(kvp.Key))
@@ -167,7 +167,7 @@ public class EquipmentProperties
             if (gems[i]==ItemData.Empty)
                 continue;
             ItemData item = gems[i];
-            foreach (KeyValuePair<string, string> kvp in item.properties)
+            foreach (KeyValuePair<string, string> kvp in item.Properties)
             {
                 if (_properties.ContainsKey(kvp.Key))
                 {
@@ -261,7 +261,7 @@ public class EquipmentProperties
 
     public bool TryPutGemToSlot(int slotIndex, ItemInventory item)
     {
-        if (slotIndex>=unlockedGemsSlot || item.IsEmpty() || item.itemData.type != ItemType.Gem)
+        if (slotIndex>=unlockedGemsSlot || item.IsEmpty() || item.itemData.Type != ItemType.Gem)
             return false;
         gems[slotIndex] = item.itemData;
         item.RemoveItem();

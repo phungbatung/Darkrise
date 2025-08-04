@@ -30,14 +30,14 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
         }
         else
         {
-            backgroundImage.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(itemInventory.itemData.rarity.ToString());
+            backgroundImage.sprite = AssetManager.Instance.GetItemSlotBackGroundImageByKey(itemInventory.itemData.Rarity.ToString());
             itemImage.color = new Color(1, 1, 1, 1);
-            itemImage.sprite = itemInventory.itemData.icon;
+            itemImage.sprite = itemInventory.itemData.Icon;
             if (itemInventory.amount <= 1)
                 amountText.text = "";
             else
                 amountText.text = itemInventory.amount.ToString();
-            if (itemInventory.itemData.type == ItemType.Equipment)
+            if (itemInventory.itemData.Type == ItemType.Equipment)
             {
                 enhanceLevel.text = itemInventory.equipmentProperties.enhanceLevel < 1 ? "" : $"+{itemInventory.equipmentProperties.enhanceLevel}";
             }
@@ -142,10 +142,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
             if (inventory.equipedItems.Contains(toDropSlot.itemInventory))
                 return;
             //Cannot drop non-equipment to equipment slot
-            if (toDropSlot.itemInventory.itemData.type != ItemType.Equipment)
+            if (toDropSlot.itemInventory.itemData.Type != ItemType.Equipment)
                 return;
             //Cannot drop equipment of different type in this equipment slot
-            if (inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.id) != inventory.equipedItems.IndexOf(itemInventory))
+            if (inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.Id) != inventory.equipedItems.IndexOf(itemInventory))
                 return;
             //Equip
             inventory.EquipItem(toDropSlot.itemInventory);
@@ -167,10 +167,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
                 return;
             }
             //Cannot swap item from equipment slot to none equipment
-            if (itemInventory.itemData.type != ItemType.Equipment)
+            if (itemInventory.itemData.Type != ItemType.Equipment)
                 return;
             //Cannot swap item from equipment slot to another equipment of different type
-            if (inventory.GetEquipmentTypeById(itemInventory.itemData.id) != inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.id))
+            if (inventory.GetEquipmentTypeById(itemInventory.itemData.Id) != inventory.GetEquipmentTypeById(toDropSlot.itemInventory.itemData.Id))
                 return;
             //Equip this item if it is equipment of the same type
             inventory.EquipItem(itemInventory);

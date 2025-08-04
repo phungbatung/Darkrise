@@ -27,9 +27,9 @@ public class BuffManager : MonoBehaviour
     }
     public void StartBuff(ItemData itemData, float duration = 0)
     {
-        EndBuffOfTheSameType(itemData.id);  
-        float buffDuration = duration > 0 ? duration : float.Parse(itemData.properties[ItemUtilities.DURATION]);
-        BuffModel buff = new BuffModel(characterStats, itemData.id, buffDuration);
+        EndBuffOfTheSameType(itemData.Id);  
+        float buffDuration = duration > 0 ? duration : float.Parse(itemData.Properties[ItemUtilities.DURATION]);
+        BuffModel buff = new BuffModel(characterStats, itemData.Id, buffDuration);
 
         GameObject BuffViewInstance = Instantiate(buffViewPrefab);
         BuffView buffView = BuffViewInstance.GetComponent<BuffView>();
@@ -39,7 +39,7 @@ public class BuffManager : MonoBehaviour
         BuffPresenter buffPresenter = buffPresenterInstance.GetComponent<BuffPresenter>();
         buffPresenter.Setup(buff, buffView);
 
-        buffDict[ItemUtilities.GetBuffTypeById(itemData.id)] = buff;
+        buffDict[ItemUtilities.GetBuffTypeById(itemData.Id)] = buff;
         buffs.Add(buff);
 
         buff.EndBuffArgEvent += EndBuffOfTheSameType;

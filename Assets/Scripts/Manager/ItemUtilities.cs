@@ -46,7 +46,7 @@ public class ItemUtilities
     {
         Dictionary<string, string> dict = new();
         string baseProperties = GetBaseStatOfEquipment(_itemData);
-        dict.Add(baseProperties, _itemData.properties[baseProperties]);
+        dict.Add(baseProperties, _itemData.Properties[baseProperties]);
         return dict;
     }
 }

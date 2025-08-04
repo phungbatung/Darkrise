@@ -26,7 +26,7 @@ public class BuffPresenter : MonoBehaviour
     {
         buffModel = _buffModel;
         buffView = _buffView;
-        buffView.SetIcon(ItemManager.Instance.itemDict[buffModel.itemId].icon);
+        buffView.SetIcon(ItemManager.Instance.itemDict[buffModel.itemId].Icon);
         buffModel.EndBuffNotArgEvent += EndBuff;
         buffModel.CountdownEvent += UpdateView;
     }
