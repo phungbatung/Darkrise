@@ -21,7 +21,7 @@ public class CharacterState
     public virtual void Enter()
     {
         character.anim.Play(defaultAnim);
-        //Debug.Log(this.GetType().Name);
+        //Debug.Log(GetType().Name);
     }
 
     public virtual void Exit() 

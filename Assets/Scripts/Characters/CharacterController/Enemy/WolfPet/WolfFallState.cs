@@ -13,6 +13,7 @@ public class WolfFallState : CharacterState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("fall state");
     }
 
     public override void Exit()

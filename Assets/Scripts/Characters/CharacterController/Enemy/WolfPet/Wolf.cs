@@ -23,6 +23,7 @@ public class Wolf : Enemy
         fallState = new WolfFallState(this, stateMachine, "fall");
         battleState = new WolfBattleState(this, stateMachine, "move");
         attackState = new WolfAttackState(this, stateMachine, "attack");
+        deathState = new EnemyDeathState(this, stateMachine, "death");
     }
 
     protected override void Start()

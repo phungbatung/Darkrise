@@ -16,7 +16,7 @@ public class EnemyDeathState : CharacterState
     public override void Enter()
     {
         base.Enter();
-        enemyBase.itemDroper.Drop();
+        enemyBase.itemDroper?.Drop();
         destroyCooldownActivated = false;
         enemyBase.stats.isImmortal = true;
         enemyBase.SetZeroVelocity();
