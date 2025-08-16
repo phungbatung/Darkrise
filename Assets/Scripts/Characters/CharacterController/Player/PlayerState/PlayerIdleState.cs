@@ -10,6 +10,11 @@ public class PlayerIdleState : PlayerGroundedState
 
     public override void Enter()
     {
+        if (InputManager.Instance.horizontalInput != 0)
+        {
+            stateMachine.ChangeState(player.moveState);
+            return;
+        }
         base.Enter();
         //player.SetZeroVelocity();
     }

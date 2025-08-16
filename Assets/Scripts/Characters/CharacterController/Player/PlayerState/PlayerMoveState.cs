@@ -13,7 +13,6 @@ public class PlayerMoveState : PlayerGroundedState
     {
         base.Enter();
         player.anim.speed = (100f + player.stats.moveSpeed.GetValue()) / 100f;
-        _animState = AnimState.Start;
     }
 
     public override void Exit()
@@ -32,15 +31,6 @@ public class PlayerMoveState : PlayerGroundedState
     }
     public override void StateEvent()
     {
-        if(_animState == AnimState.Start)
-        {
-            player.anim.Play("Player_Run");
-            _animState = AnimState.Loop;
-        }
-        else if(_animState == AnimState.End)
-        {
-            stateMachine.ChangeState(player.idleState);
-            _animState = AnimState.Start;
-        }
+        
     }
 }

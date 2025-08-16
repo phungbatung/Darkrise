@@ -23,7 +23,7 @@ public class Player : Character
         detector = GetComponentInChildren<Detector>();
 
         idleState = new PlayerIdleState(this, stateMachine, "Player_Idle");
-        moveState = new PlayerMoveState(this, stateMachine, "Player_RunStart");
+        moveState = new PlayerMoveState(this, stateMachine, "Player_Run");
         jumpState = new PlayerJumpState(this, stateMachine, "Player_StartJump");
         fallState = new PlayerFallState(this, stateMachine, "Player_JumpToFall");
         attackState = new PlayerPrimaryAttack(this, stateMachine, "Player_Attack");
@@ -32,9 +32,12 @@ public class Player : Character
         healState = new PlayerHealingState(this, stateMachine, "Player_Healing");
         lightCut = new PlayerLightCutState(this, stateMachine, "Player_LightCut");
         wolfCall = new PlayerWolfCallState(this, stateMachine, "Player_WolvesCall");
+    }
+    protected override void Start()
+    {
+        base.Start();
         stateMachine.InitialState(idleState);
     }
-
     protected override void Update()
     {
         base.Update();
