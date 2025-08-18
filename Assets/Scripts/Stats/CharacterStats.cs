@@ -30,12 +30,13 @@ public class CharacterStats : MonoBehaviour, IDamageable, IAttacker
     public Action OnHealthChanged { get; set; }
     public Action OnManaChanged { get; set; }
     public Action OnCharacterDie { get; set; }
+    public Action OnCharacterHit { get; set; }
 
 
     public BuffManager BuffManager { get; private set; }
 
 
-    private void Awake()
+    protected virtual void Awake()
     {
         InitGetStatByNameDict();
         currentHealth = maxHealth.GetValue();
@@ -111,7 +112,7 @@ public class CharacterStats : MonoBehaviour, IDamageable, IAttacker
         //apply armor
         int finalArmor = armor.GetValue() >  _armorPenetration ? armor.GetValue() - _armorPenetration : 0;
         finalDamage -= finalArmor;
-
+        OnCharacterHit?.Invoke();
         HealthIncrement(-finalDamage);
         if (currentHealth <= 0)
             OnCharacterDie?.Invoke();
@@ -131,7 +132,7 @@ public class CharacterStats : MonoBehaviour, IDamageable, IAttacker
     public void HealthIncrement(int _health = 0, int _healthPercentage = 0)
     {
         currentHealth += _health;
-        currentHealth += (int)Mathf.Floor(maxHealth.GetValue() * _healthPercentage * 1f / 100);
+        currentHealth += (int)Mathf.Floor(maxHealth.GetValue() * _healthPercentage * 1f / 100f);
         if (currentHealth > maxHealth.GetValue())
             currentHealth = maxHealth.GetValue();
         else if (currentHealth < 0)

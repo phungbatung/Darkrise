@@ -254,9 +254,10 @@ GameObject:
   - component: {fileID: 4283863323750207571}
   - component: {fileID: 1378488731302928812}
   - component: {fileID: 3879236945623726483}
-  - component: {fileID: 8593418664746489403}
   - component: {fileID: 2569274586419295006}
+  - component: {fileID: 8593418664746489403}
   - component: {fileID: 8431518974571410379}
+  - component: {fileID: -1127129246957590590}
   m_Layer: 7
   m_Name: ArcherEnemy
   m_TagString: Untagged
@@ -348,6 +349,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2569274586419295006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838802534910340527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d09bea31cb52064c9e2b52ef511541a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facingDir: 1
+  moveSpeed: 3
+  jumpForce: 13
+  dashSpeed: 0
+  dashDuration: 0
+  groundCheck: {fileID: 7574165160313194696}
+  groundCheckDistance: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  wallCheck: {fileID: 499749504646811088}
+  wallCheckDistance: 0.2
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  attackPoint: {fileID: 1379153469269277564}
+  attackRadius: 0
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  playerCheck: {fileID: 1544110919198019705}
+  playerCheckDistance: 26.4
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxDistanceXToPlayer: 100
+  maxDistanceYToPlayer: 9.34
+  groundAheadCheck: {fileID: 627896927360231675}
+  projectile: {fileID: 5725059245010776996, guid: 8514c805b620df54c976a9a3ddc50591, type: 3}
 --- !u!114 &8593418664746489403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,47 +439,6 @@ MonoBehaviour:
   currentMana: 0
   isImmortal: 0
   baseData: {fileID: 11400000, guid: 5203c9de71807c944805e45146edae9a, type: 2}
---- !u!114 &2569274586419295006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5838802534910340527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d09bea31cb52064c9e2b52ef511541a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facingDir: 1
-  moveSpeed: 3
-  jumpForce: 13
-  dashSpeed: 0
-  dashDuration: 0
-  groundCheck: {fileID: 7574165160313194696}
-  groundCheckDistance: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  wallCheck: {fileID: 499749504646811088}
-  wallCheckDistance: 0.2
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  attackPoint: {fileID: 1379153469269277564}
-  attackRadius: 0
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  playerCheck: {fileID: 1544110919198019705}
-  playerCheckDistance: 26.4
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  maxDistanceXToPlayer: 100
-  maxDistanceYToPlayer: 9.34
-  groundAheadCheck: {fileID: 627896927360231675}
-  projectile: {fileID: 5725059245010776996, guid: 8514c805b620df54c976a9a3ddc50591, type: 3}
 --- !u!114 &8431518974571410379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +452,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
+--- !u!114 &-1127129246957590590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838802534910340527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d492f0f888f0e40b21900272c40367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitFxDuration: 0.12
+  hitMaterial: {fileID: 2100000, guid: 07171636b6596234baf28485eae4eadf, type: 2}
 --- !u!1 &6289574388702639583
 GameObject:
   m_ObjectHideFlags: 0

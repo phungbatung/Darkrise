@@ -21,6 +21,7 @@ public class ItemObject : MonoBehaviour
         item = ItemManager.Instance.BuildInventoryItem(itemData);
         icon.sprite = itemData.Icon;
         bg.color = AssetManager.Instance.GetColorRarityByKey(itemData.Rarity.ToString());
+        transform.SetParent(MapManager.Instance.currentMap.Map.transform);
         transform.position = _dropPosition;
         rb.velocity = new Vector2(UnityEngine.Random.Range(-5.0f, 5.0f), 5);
     }

@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 2955327885417578145}
   - component: {fileID: 3636806125927512215}
   - component: {fileID: 1485002411169694397}
+  - component: {fileID: 1758825317985089338}
   m_Layer: 7
   m_Name: Golem
   m_TagString: Untagged
@@ -450,6 +451,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
+--- !u!114 &1758825317985089338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171655939227794809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d492f0f888f0e40b21900272c40367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitFxDuration: 0.3
+  hitMaterial: {fileID: 2100000, guid: 07171636b6596234baf28485eae4eadf, type: 2}
 --- !u!1 &6869514503975064428
 GameObject:
   m_ObjectHideFlags: 0

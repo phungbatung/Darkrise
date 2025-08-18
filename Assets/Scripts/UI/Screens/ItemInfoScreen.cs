@@ -66,12 +66,13 @@ public class ItemInfoScreen : BlitzyUI.Screen
                 }
             }
             description += "\n";
+            Debug.Log(itemInventory.equipmentProperties.unlockedGemsSlot);
             for (int i=0; i<itemInventory.equipmentProperties.unlockedGemsSlot; i++)
             {
-                if(itemInventory.equipmentProperties.gems[i]== ItemData.Empty)
+                if(itemInventory.equipmentProperties.gems[i] != ItemData.Empty)
                 {
                     ItemData gem = itemInventory.equipmentProperties.gems[i];
-                    description += gem.Name +"\n";
+                    description += $"{gem.Name}\n";
                     foreach (var _property in gem.Properties)
                     {
                         description += $"+{_property.Value} {_property.Key}\n";

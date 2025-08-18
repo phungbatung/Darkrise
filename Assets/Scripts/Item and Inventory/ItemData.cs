@@ -42,6 +42,7 @@ public enum BuffType
     Armor = 4,
     AttackSpeed = 5
 }
+
 [System.Serializable]
 public class ItemData
 {
@@ -58,10 +59,6 @@ public class ItemData
     public int SellPrice;
     public SerializableDictionary<string, string> Properties = new SerializableDictionary<string, string>();
 
-    public ItemData()
-    {
-
-    }
     public ItemData(int id, string name, Sprite icon, int level, ItemType type, int subType, ItemRarity rarity, string description, int maxSize, int sellPrice, SerializableDictionary<string, string> properties)
     {
         Id = id;
@@ -75,6 +72,11 @@ public class ItemData
         MaxSize = maxSize;
         SellPrice = sellPrice;
         Properties = properties;
+    }
+
+    public ItemData()
+    {
+
     }
 
     public EquipmentType EquipmentType => (EquipmentType)SubType;
@@ -114,7 +116,7 @@ public class ItemData
         return false;
     }
 
-    private static readonly ItemData _emptyItem = new ItemData(
+    private static ItemData _emptyItem = new ItemData(
         -1,
         string.Empty,
         default,
@@ -133,6 +135,7 @@ public class ItemData
     {
         get
         {
+            //Debug.Log("ItemData.Empty called");
             return _emptyItem;
         }
     }

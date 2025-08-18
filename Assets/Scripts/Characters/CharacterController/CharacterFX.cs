@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class CharacterFX : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Character character;
+    private SpriteRenderer sr;
+    private Material defaultMaterial;
+    [SerializeField] private float hitFxDuration;
+    [SerializeField] private Material hitMaterial;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Awake()
     {
-        
+        character = GetComponent<Character>();
+        sr = GetComponentInChildren<SpriteRenderer>();
+        defaultMaterial = sr.material;
     }
+    private void Start()
+    {
+        character.stats.OnCharacterHit += PlayHitFx;
+    }
+    private void PlayHitFx()
+    {
+        StartCoroutine(CoHitFx(hitFxDuration));
+    }    
+
+    private IEnumerator CoHitFx(float fxDuration)
+    {
+        sr.material = hitMaterial;
+        yield return new WaitForSeconds(fxDuration);
+        sr.material = defaultMaterial;
+    }    
+
 }

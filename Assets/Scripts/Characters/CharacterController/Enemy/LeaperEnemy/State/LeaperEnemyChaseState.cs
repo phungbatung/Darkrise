@@ -35,13 +35,13 @@ public class LeaperEnemyChaseState : CharacterState
         }
         if (enemy.IsWallDetected()&&enemy.IsGrounded())
         {
-            Debug.Log("log1");
+            //Debug.Log("log1");
             stateMachine.ChangeState(enemy.jumpState);
             return;
         }
         if(!enemy.IsGroundedAhead() && enemy.RawVerticalDistanceToPlayer() >= 0 && enemy.IsGrounded())
         {
-            Debug.Log($"log2, {enemy.RawVerticalDistanceToPlayer()}");
+            //Debug.Log($"log2, {enemy.RawVerticalDistanceToPlayer()}");
             stateMachine.ChangeState(enemy.jumpState);
             return;
         }

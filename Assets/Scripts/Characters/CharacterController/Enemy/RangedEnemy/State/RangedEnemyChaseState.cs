@@ -46,6 +46,6 @@ public class RangedEnemyChaseState : CharacterState
         }
         float dir = enemy.player.transform.position.x > enemy.transform.position.x ? 1 : -1;
         enemy.SetVelocity(dir * enemy.moveSpeed, enemy.rb.velocity.y);
-        Debug.Log("log");
+        //Debug.Log("log");
     }
 }

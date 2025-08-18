@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 8722882886530722414}
   - component: {fileID: 3218403745780052678}
   - component: {fileID: 186093830033891941}
+  - component: {fileID: 7729918348457917464}
   m_Layer: 6
   m_Name: Wolf
   m_TagString: Untagged
@@ -269,6 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facingDir: 1
+  moveSpeed: 0
   jumpForce: 12
   dashSpeed: 0
   dashDuration: 0
@@ -346,6 +348,20 @@ MonoBehaviour:
   currentHealth: 0
   currentMana: 0
   isImmortal: 0
+--- !u!114 &7729918348457917464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3289905884271434341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d492f0f888f0e40b21900272c40367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitFxDuration: 0.12
+  hitMaterial: {fileID: 2100000, guid: 07171636b6596234baf28485eae4eadf, type: 2}
 --- !u!1 &7449711487966496940
 GameObject:
   m_ObjectHideFlags: 0

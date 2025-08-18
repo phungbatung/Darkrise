@@ -8,7 +8,7 @@ public class MapManager : MonoBehaviour, ISaveManager
 
     public static MapManager Instance { get; private set; }
     public Dictionary<string, MapData> MapsData { get; private set; }
-    private CurrentMap currentMap;
+    public CurrentMap currentMap { get; private set; }
     [SerializeField] private MapInfo respawnMap;
 
     private void Awake()

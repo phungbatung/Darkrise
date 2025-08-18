@@ -22,6 +22,7 @@ public class CurrencyObject : MonoBehaviour
         currency = new KeyValuePair<CurrencyType, int>(type, value);
         sr.sprite = icon[type];
         transform.position = dropPosition;
+        transform.SetParent(MapManager.Instance.currentMap.Map.transform);
         rb.velocity = new Vector2(UnityEngine.Random.Range(-5.0f, 5.0f), 5);
     }
 

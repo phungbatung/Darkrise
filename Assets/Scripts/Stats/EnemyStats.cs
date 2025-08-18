@@ -8,9 +8,10 @@ public class EnemyStats : CharacterStats
     [SerializeField] private EnemyBaseStatsData baseData;
     public static readonly float growthRate = 1.08f;
 
-    private void Awake()
+    protected override void Awake()
     {
         ApplyLevelGrowth();
+        base.Awake();
     }
     public void ApplyLevelGrowth()
     {
